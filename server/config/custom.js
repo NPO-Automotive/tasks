@@ -35,7 +35,8 @@ module.exports.custom = {
   attachmentsPathSegment: 'private/attachments',
 
   defaultAdminEmail:
-    process.env.DEFAULT_ADMIN_EMAIL && process.env.DEFAULT_ADMIN_EMAIL.toLowerCase(),
+    process.env.DEFAULT_ADMIN_EMAIL &&
+    process.env.DEFAULT_ADMIN_EMAIL.toLowerCase(),
 
   showDetailedAuthErrors: process.env.SHOW_DETAILED_AUTH_ERRORS === 'true',
   allowAllToCreateProjects: process.env.ALLOW_ALL_TO_CREATE_PROJECTS === 'true',
@@ -54,12 +55,16 @@ module.exports.custom = {
   oidcUserinfoSignedResponseAlg: process.env.OIDC_USERINFO_SIGNED_RESPONSE_ALG,
   oidcScopes: process.env.OIDC_SCOPES || 'openid email profile',
   oidcResponseMode: process.env.OIDC_RESPONSE_MODE || 'fragment',
-  oidcUseDefaultResponseMode: process.env.OIDC_USE_DEFAULT_RESPONSE_MODE === 'true',
-  oidcAdminRoles: process.env.OIDC_ADMIN_ROLES ? process.env.OIDC_ADMIN_ROLES.split(',') : [],
+  oidcUseDefaultResponseMode:
+    process.env.OIDC_USE_DEFAULT_RESPONSE_MODE === 'true',
+  oidcAdminRoles: process.env.OIDC_ADMIN_ROLES
+    ? process.env.OIDC_ADMIN_ROLES.split(',')
+    : [],
   oidcClaimsSource: process.env.OIDC_CLAIMS_SOURCE || 'userinfo',
   oidcEmailAttribute: process.env.OIDC_EMAIL_ATTRIBUTE || 'email',
   oidcNameAttribute: process.env.OIDC_NAME_ATTRIBUTE || 'name',
-  oidcUsernameAttribute: process.env.OIDC_USERNAME_ATTRIBUTE || 'preferred_username',
+  oidcUsernameAttribute:
+    process.env.OIDC_USERNAME_ATTRIBUTE || 'preferred_username',
   oidcRolesAttribute: process.env.OIDC_ROLES_ATTRIBUTE || 'groups',
   oidcIgnoreUsername: process.env.OIDC_IGNORE_USERNAME === 'true',
   oidcIgnoreRoles: process.env.OIDC_IGNORE_ROLES === 'true',
@@ -67,7 +72,9 @@ module.exports.custom = {
 
   // TODO: move client base url to environment variable?
   oidcRedirectUri: `${
-    sails.config.environment === 'production' ? process.env.BASE_URL : 'http://localhost:3000'
+    sails.config.environment === 'production'
+      ? process.env.BASE_URL
+      : 'http://localhost:3000'
   }/oidc-callback`,
 
   smtpHost: process.env.SMTP_HOST,
@@ -77,7 +84,8 @@ module.exports.custom = {
   smtpUser: process.env.SMTP_USER,
   smtpPassword: process.env.SMTP_PASSWORD,
   smtpFrom: process.env.SMTP_FROM,
-  smtpTlsRejectUnauthorized: process.env.SMTP_TLS_REJECT_UNAUTHORIZED !== 'false',
+  smtpTlsRejectUnauthorized:
+    process.env.SMTP_TLS_REJECT_UNAUTHORIZED !== 'false',
 
   webhooks: JSON.parse(process.env.WEBHOOKS || '[]'), // TODO: validate structure
 

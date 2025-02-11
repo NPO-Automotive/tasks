@@ -27,20 +27,24 @@ export default {
       all: '모두',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         '연결이 복원되면<br />모든 변경 사항이 자동으로 저장됩니다.',
-      areYouSureYouWantToDeleteThisAttachment: '해당하는 첨부 파일을 삭제하시겠습니까?',
+      areYouSureYouWantToDeleteThisAttachment:
+        '해당하는 첨부 파일을 삭제하시겠습니까?',
       areYouSureYouWantToDeleteThisBoard: '해당하는 보드를 삭제하시겠습니까?',
-      areYouSureYouWantToDeleteThisCard: '해당하는 항목카드를 삭제하시겠습니까?',
+      areYouSureYouWantToDeleteThisCard:
+        '해당하는 항목카드를 삭제하시겠습니까?',
       areYouSureYouWantToDeleteThisComment: '해당하는 댓글을 삭제하시겠습니까?',
       areYouSureYouWantToDeleteThisLabel: '해당하는 라벨을 삭제하시겠습니까?',
       areYouSureYouWantToDeleteThisList: '해당하는 목록를 삭제하시겠습니까?',
-      areYouSureYouWantToDeleteThisProject: '해당하는 프로젝트를 삭제하시겠습니까?',
+      areYouSureYouWantToDeleteThisProject:
+        '해당하는 프로젝트를 삭제하시겠습니까?',
       areYouSureYouWantToDeleteThisTask: '해당하는 업무를 삭제하겠습니까?',
       areYouSureYouWantToDeleteThisUser: '해당하는 사용자를 삭제하겠습니까?',
       areYouSureYouWantToLeaveBoard: '이 보드에서 나가시겠습니까?',
       areYouSureYouWantToLeaveProject: '이 프로젝트에서 나가시겠습니까?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         '해당하는 프로젝트에서 매니저를 제거하시겠습니까?',
-      areYouSureYouWantToRemoveThisMemberFromBoard: '해당하는 멤버를 보드에서 삭제하시겠습니까?',
+      areYouSureYouWantToRemoveThisMemberFromBoard:
+        '해당하는 멤버를 보드에서 삭제하시겠습니까?',
       attachment: '첨부',
       attachments: '첨부 파일',
       authentication: '인증',
@@ -56,7 +60,8 @@ export default {
       color: '색상',
       createBoard_title: '보드 생성',
       createLabel_title: '라벨 생성',
-      createNewOneOrSelectExistingOne: '새로 생성하거나<br />기존 항목을 선택하세요.',
+      createNewOneOrSelectExistingOne:
+        '새로 생성하거나<br />기존 항목을 선택하세요.',
       createProject_title: '프로젝트 생성',
       createTextFile_title: '텍스트 파일 생성',
       currentPassword: '현재 비밀번호',
@@ -89,7 +94,8 @@ export default {
       editUsername_title: '사용자 이름 수정',
       email: '이메일',
       emailAlreadyInUse: '이미 사용 중인 이메일입니다',
-      enterCardTitle: '카드 제목 입력... [Ctrl+Enter]로 자동으로 열 수 있습니다.',
+      enterCardTitle:
+        '카드 제목 입력... [Ctrl+Enter]로 자동으로 열 수 있습니다.',
       enterDescription: '설명 입력...',
       enterFilename: '파일 이름 입력',
       enterListTitle: '목록 제목 입력...',
@@ -147,11 +153,13 @@ export default {
       subscribeToMyOwnCardsByDefault: '기본적으로 내 카드를 구독합니다',
       taskActions_title: '업무 조율',
       tasks: '업무',
-      thereIsNoPreviewAvailableForThisAttachment: '이 첨부 파일은 미리 보기를 사용할 수 없습니다.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        '이 첨부 파일은 미리 보기를 사용할 수 없습니다.',
       time: '시간',
       title: '제목',
       userActions_title: '사용자 조율',
-      userAddedThisCardToList: '<0>{{user}}</0>님이 <1>{{list}}에 카드를 추가했습니다</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0>님이 <1>{{list}}에 카드를 추가했습니다</1>',
       userLeftNewCommentToCard:
         '{{user}}님이 <2>{{card}}</2>에 «{{comment}}»라는 댓글을 남겼습니다',
       userMovedCardFromListToList:

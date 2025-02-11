@@ -27,15 +27,24 @@ export default {
       all: 'الكل',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'سيتم حفظ جميع التغييرات تلقائياً<br />بعد استعادة الإتصال.',
-      areYouSureYouWantToDeleteThisAttachment: 'هل أنت متأكد أنك تريد حذف هذا المرفق؟',
-      areYouSureYouWantToDeleteThisBoard: 'هل أنت متأكد أنك تريد حذف هذه اللوحة؟',
-      areYouSureYouWantToDeleteThisCard: 'هل أنت متأكد أنك تريد حذف هذه البطاقة؟',
-      areYouSureYouWantToDeleteThisComment: 'هل أنت متأكد أنك تريد حذف هذا التعليق؟',
-      areYouSureYouWantToDeleteThisLabel: 'هل أنت متأكد أنك تريد حذف هذا الملصق؟',
-      areYouSureYouWantToDeleteThisList: 'هل أنت متأكد أنك تريد حذف هذه القائمة؟',
-      areYouSureYouWantToDeleteThisProject: 'هل أنت متأكد أنك تريد حذف هذا المشروع؟',
-      areYouSureYouWantToDeleteThisTask: 'هل أنت متأكد أنك تريد حذف هذه المهمة؟',
-      areYouSureYouWantToDeleteThisUser: 'هل أنت متأكد أنك تريد حذف هذا المستخدم؟',
+      areYouSureYouWantToDeleteThisAttachment:
+        'هل أنت متأكد أنك تريد حذف هذا المرفق؟',
+      areYouSureYouWantToDeleteThisBoard:
+        'هل أنت متأكد أنك تريد حذف هذه اللوحة؟',
+      areYouSureYouWantToDeleteThisCard:
+        'هل أنت متأكد أنك تريد حذف هذه البطاقة؟',
+      areYouSureYouWantToDeleteThisComment:
+        'هل أنت متأكد أنك تريد حذف هذا التعليق؟',
+      areYouSureYouWantToDeleteThisLabel:
+        'هل أنت متأكد أنك تريد حذف هذا الملصق؟',
+      areYouSureYouWantToDeleteThisList:
+        'هل أنت متأكد أنك تريد حذف هذه القائمة؟',
+      areYouSureYouWantToDeleteThisProject:
+        'هل أنت متأكد أنك تريد حذف هذا المشروع؟',
+      areYouSureYouWantToDeleteThisTask:
+        'هل أنت متأكد أنك تريد حذف هذه المهمة؟',
+      areYouSureYouWantToDeleteThisUser:
+        'هل أنت متأكد أنك تريد حذف هذا المستخدم؟',
       areYouSureYouWantToLeaveBoard: 'هل أنت متأكد أنك تريد مغادرة اللوحة؟',
       areYouSureYouWantToLeaveProject: 'هل أنت متأكد أنك تريد مغادرة المشروع؟',
       areYouSureYouWantToRemoveThisManagerFromProject:
@@ -58,7 +67,8 @@ export default {
       copy_inline: 'نسخ',
       createBoard_title: 'إنشاء لوحة',
       createLabel_title: 'إنشاء ملصق',
-      createNewOneOrSelectExistingOne: 'أنشئ واحدة جديدة أو اختر<br />واحدة موجودة.',
+      createNewOneOrSelectExistingOne:
+        'أنشئ واحدة جديدة أو اختر<br />واحدة موجودة.',
       createProject_title: 'إنشاء مشروع',
       createTextFile_title: 'إنشاء ملف نصي',
       currentPassword: 'كلمة المرور الحالية',
@@ -157,13 +167,17 @@ export default {
       subscribeToMyOwnCardsByDefault: 'الاشتراك في بطاقاتي الخاصة إفتراضياً',
       taskActions_title: 'إجراءات المهمة',
       tasks: 'المهام',
-      thereIsNoPreviewAvailableForThisAttachment: 'لا يوجد معاينة متاحة لهذا المرفق.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'لا يوجد معاينة متاحة لهذا المرفق.',
       time: 'الوقت',
       title: 'العنوان',
       userActions_title: 'إجراءات المستخدم',
-      userAddedThisCardToList: '<0>{{user}}</0><1> تمت إضافة هذه البطاقة إلى {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} ترك تعليق جديد «{{comment}}» إلى <2>{{card}}</2>',
-      userMovedCardFromListToList: '{{user}} انتقل <2>{{card}}</2> من {{fromList}} إلى {{toList}}',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> تمت إضافة هذه البطاقة إلى {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} ترك تعليق جديد «{{comment}}» إلى <2>{{card}}</2>',
+      userMovedCardFromListToList:
+        '{{user}} انتقل <2>{{card}}</2> من {{fromList}} إلى {{toList}}',
       userMovedThisCardFromListToList:
         '<0>{{user}}</0><1> نُقلت هذه البطاقة من {{fromList}} إلى {{toList}}</1>',
       username: 'اسم المستخدم',

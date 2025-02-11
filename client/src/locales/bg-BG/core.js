@@ -29,16 +29,26 @@ export default {
         'Всички промени ще бъдат автоматично запазени<br />след възстановяване на връзката.',
       areYouSureYouWantToDeleteThisAttachment:
         'Сигурни ли сте, че искате да изтриете този прикачен файл?',
-      areYouSureYouWantToDeleteThisBoard: 'Сигурни ли сте, че искате да изтриете това табло?',
-      areYouSureYouWantToDeleteThisCard: 'Сигурни ли сте, че искате да изтриете тази карта?',
-      areYouSureYouWantToDeleteThisComment: 'Сигурни ли сте, че искате да изтриете този коментар?',
-      areYouSureYouWantToDeleteThisLabel: 'Сигурни ли сте, че искате да изтриете този етикет?',
-      areYouSureYouWantToDeleteThisList: 'Сигурни ли сте, че искате да изтриете този списък?',
-      areYouSureYouWantToDeleteThisProject: 'Сигурни ли сте, че искате да изтриете този проект?',
-      areYouSureYouWantToDeleteThisTask: 'Сигурни ли сте, че искате да изтриете тази задача?',
-      areYouSureYouWantToDeleteThisUser: 'Сигурни ли сте, че искате да изтриете този потребител?',
-      areYouSureYouWantToLeaveBoard: 'Сигурни ли сте, че искате да напуснете таблото?',
-      areYouSureYouWantToLeaveProject: 'Сигурни ли сте, че искате да напуснете проекта?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Сигурни ли сте, че искате да изтриете това табло?',
+      areYouSureYouWantToDeleteThisCard:
+        'Сигурни ли сте, че искате да изтриете тази карта?',
+      areYouSureYouWantToDeleteThisComment:
+        'Сигурни ли сте, че искате да изтриете този коментар?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Сигурни ли сте, че искате да изтриете този етикет?',
+      areYouSureYouWantToDeleteThisList:
+        'Сигурни ли сте, че искате да изтриете този списък?',
+      areYouSureYouWantToDeleteThisProject:
+        'Сигурни ли сте, че искате да изтриете този проект?',
+      areYouSureYouWantToDeleteThisTask:
+        'Сигурни ли сте, че искате да изтриете тази задача?',
+      areYouSureYouWantToDeleteThisUser:
+        'Сигурни ли сте, че искате да изтриете този потребител?',
+      areYouSureYouWantToLeaveBoard:
+        'Сигурни ли сте, че искате да напуснете таблото?',
+      areYouSureYouWantToLeaveProject:
+        'Сигурни ли сте, че искате да напуснете проекта?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Сигурни ли сте, че искате да премахнете този мениджър от проекта?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -59,7 +69,8 @@ export default {
       copy_inline: 'копирай',
       createBoard_title: 'Създаване на табло',
       createLabel_title: 'Създаване на етикет',
-      createNewOneOrSelectExistingOne: 'Създайте нов или изберете<br/>съществуващ.',
+      createNewOneOrSelectExistingOne:
+        'Създайте нов или изберете<br/>съществуващ.',
       createProject_title: 'Създаване на проект',
       createTextFile_title: 'Създаване на текстов файл',
       currentPassword: 'Текуща парола',
@@ -93,7 +104,8 @@ export default {
       editUsername_title: 'Редактиране на потребителско име',
       email: 'Имейл',
       emailAlreadyInUse: 'Имейлът вече се използва',
-      enterCardTitle: 'Въведете заглавие на картата... [Ctrl+Enter] за автоматично отваряне.',
+      enterCardTitle:
+        'Въведете заглавие на картата... [Ctrl+Enter] за автоматично отваряне.',
       enterDescription: 'Въведете описание...',
       enterFilename: 'Въведете име на файла',
       enterListTitle: 'Въведете заглавие на списък...',
@@ -154,15 +166,19 @@ export default {
       settings: 'Настройки',
       sortList_title: 'Сортиране на списък',
       stopwatch: 'Хронометър',
-      subscribeToMyOwnCardsByDefault: 'Абонирайте се за собствените си карти по подразбиране',
+      subscribeToMyOwnCardsByDefault:
+        'Абонирайте се за собствените си карти по подразбиране',
       taskActions_title: 'Действия със задачи',
       tasks: 'Задачи',
-      thereIsNoPreviewAvailableForThisAttachment: 'Няма наличен преглед за този прикачен файл.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Няма наличен преглед за този прикачен файл.',
       time: 'Време',
       title: 'Заглавие',
       userActions_title: 'Потребителски действия',
-      userAddedThisCardToList: '<0>{{user}}</0><1> добави тази карта в {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} остави нов коментар «{{comment}}» в <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> добави тази карта в {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} остави нов коментар «{{comment}}» в <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} премести <2>{{card}}</2> от {{fromList}} към {{toList}}',
       userMovedThisCardFromListToList:
@@ -238,7 +254,8 @@ export default {
       removeManager: 'Премахване на мениджър',
       removeMember: 'Премахване на член',
       save: 'Запазване',
-      showAllAttachments: 'Показване на всички прикачени файлове ({{hidden}} скрити)',
+      showAllAttachments:
+        'Показване на всички прикачени файлове ({{hidden}} скрити)',
       showDetails: 'Показване на подробности',
       showFewerAttachments: 'Показване на по-малко прикачени файлове',
       sortList_title: 'Списък за сортиране',

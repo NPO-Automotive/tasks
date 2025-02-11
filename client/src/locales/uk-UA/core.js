@@ -27,17 +27,27 @@ export default {
       all: 'Все',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Всі зміни будуть автоматично збережені<br />після відновлення підключення.',
-      areYouSureYouWantToDeleteThisAttachment: 'Ви впевнені, що хочете видалити це вкладення?',
-      areYouSureYouWantToDeleteThisBoard: 'Ви впевнені, що хочете видалити цю дошку?',
-      areYouSureYouWantToDeleteThisCard: 'Ви впевнені, що хочете видалити цю картку?',
-      areYouSureYouWantToDeleteThisComment: 'Ви впевнені, що хочете видалити цей коментар?',
-      areYouSureYouWantToDeleteThisLabel: 'Ви впевнені, що хочете видалити цю мітку?',
-      areYouSureYouWantToDeleteThisList: 'Ви впевнені, що хочете видалити цей список?',
-      areYouSureYouWantToDeleteThisProject: 'Ви впевнені, що хочете видалити цей проект?',
-      areYouSureYouWantToDeleteThisTask: 'Ви впевнені, що хочете видалити це завдання?',
-      areYouSureYouWantToDeleteThisUser: 'Ви впевнені, що хочете видалити цього користувача?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Ви впевнені, що хочете видалити це вкладення?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Ви впевнені, що хочете видалити цю дошку?',
+      areYouSureYouWantToDeleteThisCard:
+        'Ви впевнені, що хочете видалити цю картку?',
+      areYouSureYouWantToDeleteThisComment:
+        'Ви впевнені, що хочете видалити цей коментар?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Ви впевнені, що хочете видалити цю мітку?',
+      areYouSureYouWantToDeleteThisList:
+        'Ви впевнені, що хочете видалити цей список?',
+      areYouSureYouWantToDeleteThisProject:
+        'Ви впевнені, що хочете видалити цей проект?',
+      areYouSureYouWantToDeleteThisTask:
+        'Ви впевнені, що хочете видалити це завдання?',
+      areYouSureYouWantToDeleteThisUser:
+        'Ви впевнені, що хочете видалити цього користувача?',
       areYouSureYouWantToLeaveBoard: 'Ви впевнені, що хочете залишити дошку?',
-      areYouSureYouWantToLeaveProject: 'Ви впевнені, що хочете залишити проект?',
+      areYouSureYouWantToLeaveProject:
+        'Ви впевнені, що хочете залишити проект?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Ви впевнені, що хочете видалити цього менеджера з проекту?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -57,7 +67,8 @@ export default {
       color: 'Колір',
       createBoard_title: 'Створити Дошку',
       createLabel_title: 'Створити Мітку',
-      createNewOneOrSelectExistingOne: 'Створіть нову або виберіть<br />існуючу.',
+      createNewOneOrSelectExistingOne:
+        'Створіть нову або виберіть<br />існуючу.',
       createProject_title: 'Створити Проект',
       createTextFile_title: 'Створити Текстовий Файл',
       currentPassword: 'Поточний пароль',
@@ -90,7 +101,8 @@ export default {
       editUsername_title: "Редагувати Ім'я користувача",
       email: 'Електронна пошта',
       emailAlreadyInUse: 'Електронна пошта вже використовується',
-      enterCardTitle: 'Введіть назву картки... [Ctrl+Enter] для автоматичного відкриття.',
+      enterCardTitle:
+        'Введіть назву картки... [Ctrl+Enter] для автоматичного відкриття.',
       enterDescription: 'Введіть опис...',
       enterFilename: "Введіть ім'я файлу",
       enterListTitle: 'Введіть назву списку...',
@@ -145,14 +157,17 @@ export default {
       selectProject: 'Вибрати проект',
       settings: 'Налаштування',
       stopwatch: 'Секундомір',
-      subscribeToMyOwnCardsByDefault: 'Підписатися на свої картки за замовчуванням',
+      subscribeToMyOwnCardsByDefault:
+        'Підписатися на свої картки за замовчуванням',
       taskActions_title: 'Дії з завданням',
       tasks: 'Завдання',
-      thereIsNoPreviewAvailableForThisAttachment: 'Для цього вкладення немає доступного перегляду.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Для цього вкладення немає доступного перегляду.',
       time: 'Час',
       title: 'Назва',
       userActions_title: 'Дії користувача',
-      userAddedThisCardToList: '<0>{{user}}</0><1> додав(ла) цю картку до {{list}}</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> додав(ла) цю картку до {{list}}</1>',
       userLeftNewCommentToCard:
         '{{user}} залишив(ла) новий коментар «{{comment}}» до <2>{{card}}</2>',
       userMovedCardFromListToList:

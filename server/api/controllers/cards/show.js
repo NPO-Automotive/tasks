@@ -26,7 +26,10 @@ module.exports = {
       .getProjectPath(inputs.id)
       .intercept('pathNotFound', () => Errors.CARD_NOT_FOUND);
 
-    const isBoardMember = await sails.helpers.users.isBoardMember(currentUser.id, card.boardId);
+    const isBoardMember = await sails.helpers.users.isBoardMember(
+      currentUser.id,
+      card.boardId,
+    );
 
     if (!isBoardMember) {
       const isProjectManager = await sails.helpers.users.isProjectManager(
@@ -39,9 +42,14 @@ module.exports = {
       }
     }
 
-    card.isSubscribed = await sails.helpers.users.isCardSubscriber(currentUser.id, card.id);
+    card.isSubscribed = await sails.helpers.users.isCardSubscriber(
+      currentUser.id,
+      card.id,
+    );
 
-    const cardMemberships = await sails.helpers.cards.getCardMemberships(card.id);
+    const cardMemberships = await sails.helpers.cards.getCardMemberships(
+      card.id,
+    );
     const cardLabels = await sails.helpers.cards.getCardLabels(card.id);
     const tasks = await sails.helpers.cards.getTasks(card.id);
     const attachments = await sails.helpers.cards.getAttachments(card.id);

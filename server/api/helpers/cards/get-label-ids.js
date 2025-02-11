@@ -1,4 +1,5 @@
-const idOrIdsValidator = (value) => _.isString(value) || _.every(value, _.isString);
+const idOrIdsValidator = (value) =>
+  _.isString(value) || _.every(value, _.isString);
 
 module.exports = {
   inputs: {
@@ -12,6 +13,10 @@ module.exports = {
   async fn(inputs) {
     const cardLabels = await sails.helpers.cards.getCardLabels(inputs.idOrIds);
 
-    return sails.helpers.utils.mapRecords(cardLabels, 'labelId', _.isArray(inputs.idOrIds));
+    return sails.helpers.utils.mapRecords(
+      cardLabels,
+      'labelId',
+      _.isArray(inputs.idOrIds),
+    );
   },
 };

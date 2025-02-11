@@ -85,14 +85,20 @@ module.exports = {
       creatorUserId: values.creatorUser.id,
     }).fetch();
 
-    const cardMemberships = await sails.helpers.cards.getCardMemberships(inputs.record.id);
+    const cardMemberships = await sails.helpers.cards.getCardMemberships(
+      inputs.record.id,
+    );
     const cardMembershipsValues = cardMemberships.map((cardMembership) => ({
       ..._.pick(cardMembership, ['userId']),
       cardId: card.id,
     }));
-    const nextCardMemberships = await CardMembership.createEach(cardMembershipsValues).fetch();
+    const nextCardMemberships = await CardMembership.createEach(
+      cardMembershipsValues,
+    ).fetch();
 
-    const cardLabels = await sails.helpers.cards.getCardLabels(inputs.record.id);
+    const cardLabels = await sails.helpers.cards.getCardLabels(
+      inputs.record.id,
+    );
     const cardLabelsValues = cardLabels.map((cardLabel) => ({
       ..._.pick(cardLabel, ['labelId']),
       cardId: card.id,

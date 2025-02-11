@@ -27,17 +27,27 @@ export default {
       all: 'Semua',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Semua perubahan akan disimpan<br />setelah koneksi pulih.',
-      areYouSureYouWantToDeleteThisAttachment: 'Apakah anda ingin menghapus lampiran ini?',
-      areYouSureYouWantToDeleteThisBoard: 'Apakah anda ingin menghapus papan ini?',
-      areYouSureYouWantToDeleteThisCard: 'Apakah anda ingin menghapus kartu ini?',
-      areYouSureYouWantToDeleteThisComment: 'Apakah anda ingin menghapus komentar ini?',
-      areYouSureYouWantToDeleteThisLabel: 'Apakah anda ingin menghapus label ini?',
-      areYouSureYouWantToDeleteThisList: 'Apakah anda ingin menghapus daftar ini?',
-      areYouSureYouWantToDeleteThisProject: 'Apakah anda ingin menghapus proyek ini?',
-      areYouSureYouWantToDeleteThisTask: 'Apakah anda ingin menghapus tugas ini?',
-      areYouSureYouWantToDeleteThisUser: 'Apakah anda ingin menghapus pengguna ini?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Apakah anda ingin menghapus lampiran ini?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Apakah anda ingin menghapus papan ini?',
+      areYouSureYouWantToDeleteThisCard:
+        'Apakah anda ingin menghapus kartu ini?',
+      areYouSureYouWantToDeleteThisComment:
+        'Apakah anda ingin menghapus komentar ini?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Apakah anda ingin menghapus label ini?',
+      areYouSureYouWantToDeleteThisList:
+        'Apakah anda ingin menghapus daftar ini?',
+      areYouSureYouWantToDeleteThisProject:
+        'Apakah anda ingin menghapus proyek ini?',
+      areYouSureYouWantToDeleteThisTask:
+        'Apakah anda ingin menghapus tugas ini?',
+      areYouSureYouWantToDeleteThisUser:
+        'Apakah anda ingin menghapus pengguna ini?',
       areYouSureYouWantToLeaveBoard: 'Apakah anda ingin keluar dari papan ini?',
-      areYouSureYouWantToLeaveProject: 'Apakah anda ingin keluar dari proyek ini?',
+      areYouSureYouWantToLeaveProject:
+        'Apakah anda ingin keluar dari proyek ini?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Apakah anda ingin menghapus manajer ini dari papan ini?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -57,7 +67,8 @@ export default {
       color: 'Warna',
       createBoard_title: 'Buat Papan',
       createLabel_title: 'Buat Label',
-      createNewOneOrSelectExistingOne: 'Create a new one or select<br />an existing one.',
+      createNewOneOrSelectExistingOne:
+        'Create a new one or select<br />an existing one.',
       createProject_title: 'Buat Proyek',
       createTextFile_title: 'Buat Berkas Teks',
       currentPassword: 'Kata sandi sekarang',
@@ -90,7 +101,8 @@ export default {
       editUsername_title: 'Ubah Username',
       email: 'E-mail',
       emailAlreadyInUse: 'E-mail telah digunakan',
-      enterCardTitle: 'Masukkan judul kartu... [Ctrl+Enter] untuk membuka otomatis.',
+      enterCardTitle:
+        'Masukkan judul kartu... [Ctrl+Enter] untuk membuka otomatis.',
       enterDescription: 'Masukkan deskripsi...',
       enterFilename: 'Masukkan nama berkas...',
       enterListTitle: 'Masukkan judul daftar...',
@@ -145,7 +157,8 @@ export default {
       selectProject: 'Pilih proyek',
       settings: 'Setelan',
       stopwatch: 'Stopwatch',
-      subscribeToMyOwnCardsByDefault: 'Berlangganan kartu saya sendiri secara default',
+      subscribeToMyOwnCardsByDefault:
+        'Berlangganan kartu saya sendiri secara default',
       taskActions_title: 'Aksi Tugas',
       tasks: 'Tugas',
       thereIsNoPreviewAvailableForThisAttachment:
@@ -153,8 +166,10 @@ export default {
       time: 'Waktu',
       title: 'Judul',
       userActions_title: 'Aksi Pengguna',
-      userAddedThisCardToList: '<0>{{user}}</0><1> menambahkan kartu ini ke {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} mengomentari «{{comment}}» di <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> menambahkan kartu ini ke {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} mengomentari «{{comment}}» di <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} memindahkan <2>{{card}}</2> dari {{fromList}} ke {{toList}}',
       userMovedThisCardFromListToList:

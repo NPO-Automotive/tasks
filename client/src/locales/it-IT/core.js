@@ -26,17 +26,28 @@ export default {
       all: 'tutto',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Tutte le modifiche verranno salvate<br />al ripristino della connessione.',
-      areYouSureYouWantToDeleteThisAttachment: 'Sei sicuro di voler eliminare questo allegato?',
-      areYouSureYouWantToDeleteThisBoard: 'Sei sicuro di voler eliminare questa bacheca?',
-      areYouSureYouWantToDeleteThisCard: 'Sei sicuro di voler eliminare questa card?',
-      areYouSureYouWantToDeleteThisComment: 'Sei sicuro di voler eliminare questo commento?',
-      areYouSureYouWantToDeleteThisLabel: 'Sei sicuro di voler eliminare questa etichetta?',
-      areYouSureYouWantToDeleteThisList: 'Sei sicuro di voler eliminare questo elenco?',
-      areYouSureYouWantToDeleteThisProject: 'Sei sicuro di voler eliminare questo progetto?',
-      areYouSureYouWantToDeleteThisTask: 'Sei sicuro di voler eliminare questo task?',
-      areYouSureYouWantToDeleteThisUser: 'Sei sicuro di voler eliminare questo utente?',
-      areYouSureYouWantToLeaveBoard: 'Sei sicuro di voler abbandonare la bacheca?',
-      areYouSureYouWantToLeaveProject: 'Sei sicuro di voler abbandonare il progetto?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Sei sicuro di voler eliminare questo allegato?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Sei sicuro di voler eliminare questa bacheca?',
+      areYouSureYouWantToDeleteThisCard:
+        'Sei sicuro di voler eliminare questa card?',
+      areYouSureYouWantToDeleteThisComment:
+        'Sei sicuro di voler eliminare questo commento?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Sei sicuro di voler eliminare questa etichetta?',
+      areYouSureYouWantToDeleteThisList:
+        'Sei sicuro di voler eliminare questo elenco?',
+      areYouSureYouWantToDeleteThisProject:
+        'Sei sicuro di voler eliminare questo progetto?',
+      areYouSureYouWantToDeleteThisTask:
+        'Sei sicuro di voler eliminare questo task?',
+      areYouSureYouWantToDeleteThisUser:
+        'Sei sicuro di voler eliminare questo utente?',
+      areYouSureYouWantToLeaveBoard:
+        'Sei sicuro di voler abbandonare la bacheca?',
+      areYouSureYouWantToLeaveProject:
+        'Sei sicuro di voler abbandonare il progetto?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Sei sicuro di voler rimuovere questo amministratore dal progetto?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -150,7 +161,8 @@ export default {
       settings: 'Impostazioni',
       sortList_title: 'Ordina',
       stopwatch: 'Timer',
-      subscribeToMyOwnCardsByDefault: 'Abbonati alle mie card per impostazione predefinita',
+      subscribeToMyOwnCardsByDefault:
+        'Abbonati alle mie card per impostazione predefinita',
       taskActions_title: 'Task Azioni',
       tasks: 'Tasks',
       thereIsNoPreviewAvailableForThisAttachment:
@@ -158,10 +170,12 @@ export default {
       time: 'Tempo',
       title: 'Titolo',
       userActions_title: 'Azioni Utente',
-      userAddedThisCardToList: '<0>{{user}}</0><1> ha aggiunto questa card a {{list}}</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> ha aggiunto questa card a {{list}}</1>',
       userLeftNewCommentToCard:
         '{{user}} ha lasciato un nuovo commento «{{comment}}» a <2>{{card}}</2>',
-      userMovedCardFromListToList: '{{user}} ha mosso <2>{{card}}</2> da {{fromList}} a {{toList}}',
+      userMovedCardFromListToList:
+        '{{user}} ha mosso <2>{{card}}</2> da {{fromList}} a {{toList}}',
       userMovedThisCardFromListToList:
         '<0>{{user}}</0><1> ha mosso questa card da {{fromList}} a {{toList}}</1>',
       username: 'Username',

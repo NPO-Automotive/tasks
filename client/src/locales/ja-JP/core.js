@@ -27,17 +27,27 @@ export default {
       all: 'すべて',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         '全ての変更は接続回復後自動的に保存されます。',
-      areYouSureYouWantToDeleteThisAttachment: 'この添付ファイルを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisBoard: 'このボードを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisCard: 'このカードを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisComment: 'このコメントを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisLabel: 'このラベルを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisList: 'このリストを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisProject: 'このプロジェクトを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisTask: 'このタスクを削除してもよろしいですか？',
-      areYouSureYouWantToDeleteThisUser: 'このユーザーを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisAttachment:
+        'この添付ファイルを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisBoard:
+        'このボードを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisCard:
+        'このカードを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisComment:
+        'このコメントを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisLabel:
+        'このラベルを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisList:
+        'このリストを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisProject:
+        'このプロジェクトを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisTask:
+        'このタスクを削除してもよろしいですか？',
+      areYouSureYouWantToDeleteThisUser:
+        'このユーザーを削除してもよろしいですか？',
       areYouSureYouWantToLeaveBoard: 'ボードから退出してもよろしいですか？',
-      areYouSureYouWantToLeaveProject: 'プロジェクトから退出してもよろしいですか？',
+      areYouSureYouWantToLeaveProject:
+        'プロジェクトから退出してもよろしいですか？',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'このマネージャーをプロジェクトから外してもよろしいですか？',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -57,7 +67,8 @@ export default {
       color: '色',
       createBoard_title: 'ボードを作成',
       createLabel_title: 'ラベルを作成',
-      createNewOneOrSelectExistingOne: '新規作成もしくは<br />既存のものから選択。',
+      createNewOneOrSelectExistingOne:
+        '新規作成もしくは<br />既存のものから選択。',
       createProject_title: 'プロジェクトを作成',
       createTextFile_title: 'テキストファイルを作成',
       currentPassword: '現在のパスワード',
@@ -148,11 +159,13 @@ export default {
       subscribeToMyOwnCardsByDefault: '自分のカードをデフォルトで購読する',
       taskActions_title: 'タスクのアクション',
       tasks: 'タスク',
-      thereIsNoPreviewAvailableForThisAttachment: 'この添付ファイルにはプレビューがありません。',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'この添付ファイルにはプレビューがありません。',
       time: '時間',
       title: 'タイトル',
       userActions_title: 'ユーザーのアクション',
-      userAddedThisCardToList: '<0>{{user}}</0> 様が <1>{{list}} をこのカードに追加しました</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0> 様が <1>{{list}} をこのカードに追加しました</1>',
       userLeftNewCommentToCard:
         '{{user}} 様が <2> {{card}} </2> に新しいコメント «{{comment}}» を残しました',
       userMovedCardFromListToList:

@@ -21,13 +21,20 @@ module.exports = {
     const project = await Project.archiveOne(inputs.record.id);
 
     if (project) {
-      const projectManagerUserIds = sails.helpers.utils.mapRecords(projectManagers, 'userId');
+      const projectManagerUserIds = sails.helpers.utils.mapRecords(
+        projectManagers,
+        'userId',
+      );
 
       const boardIds = await sails.helpers.projects.getBoardIds(project.id);
       const boardRooms = boardIds.map((boardId) => `board:${boardId}`);
 
-      const boardMemberUserIds = await sails.helpers.boards.getMemberUserIds(boardIds);
-      const projectRelatedUserIds = _.union(projectManagerUserIds, boardMemberUserIds);
+      const boardMemberUserIds =
+        await sails.helpers.boards.getMemberUserIds(boardIds);
+      const projectRelatedUserIds = _.union(
+        projectManagerUserIds,
+        boardMemberUserIds,
+      );
 
       projectRelatedUserIds.forEach((userId) => {
         sails.sockets.removeRoomMembersFromRooms(`@user:${userId}`, boardRooms);

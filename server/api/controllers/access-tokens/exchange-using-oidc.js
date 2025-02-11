@@ -69,15 +69,20 @@ module.exports = {
         sails.log.warn(`Invalid code or nonce! (IP: ${remoteAddress})`);
         return Errors.INVALID_CODE_OR_NONCE;
       })
-      .intercept('invalidOIDCConfiguration', () => Errors.INVALID_OIDC_CONFIGURATION)
-      .intercept('invalidUserinfoConfiguration', () => Errors.INVALID_USERINFO_CONFIGURATION)
+      .intercept(
+        'invalidOIDCConfiguration',
+        () => Errors.INVALID_OIDC_CONFIGURATION,
+      )
+      .intercept(
+        'invalidUserinfoConfiguration',
+        () => Errors.INVALID_USERINFO_CONFIGURATION,
+      )
       .intercept('emailAlreadyInUse', () => Errors.EMAIL_ALREADY_IN_USE)
       .intercept('usernameAlreadyInUse', () => Errors.USERNAME_ALREADY_IN_USE)
       .intercept('missingValues', () => Errors.MISSING_VALUES);
 
-    const { token: accessToken, payload: accessTokenPayload } = sails.helpers.utils.createJwtToken(
-      user.id,
-    );
+    const { token: accessToken, payload: accessTokenPayload } =
+      sails.helpers.utils.createJwtToken(user.id);
 
     const httpOnlyToken = inputs.withHttpOnlyToken ? uuid() : null;
 
@@ -90,7 +95,11 @@ module.exports = {
     });
 
     if (httpOnlyToken && !this.req.isSocket) {
-      sails.helpers.utils.setHttpOnlyTokenCookie(httpOnlyToken, accessTokenPayload, this.res);
+      sails.helpers.utils.setHttpOnlyTokenCookie(
+        httpOnlyToken,
+        accessTokenPayload,
+        this.res,
+      );
     }
 
     return {

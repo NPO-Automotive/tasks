@@ -56,7 +56,10 @@ module.exports = {
       throw Errors.PROJECT_NOT_FOUND;
     }
 
-    const isProjectManager = await sails.helpers.users.isProjectManager(currentUser.id, project.id);
+    const isProjectManager = await sails.helpers.users.isProjectManager(
+      currentUser.id,
+      project.id,
+    );
 
     if (!isProjectManager) {
       throw Errors.PROJECT_NOT_FOUND; // Forbidden
@@ -65,7 +68,10 @@ module.exports = {
     const values = _.pick(inputs, ['position', 'name']);
 
     let boardImport;
-    if (inputs.importType && Object.values(Board.ImportTypes).includes(inputs.importType)) {
+    if (
+      inputs.importType &&
+      Object.values(Board.ImportTypes).includes(inputs.importType)
+    ) {
       let files;
       try {
         files = await sails.helpers.utils.receiveFile('importFile', this.req);
@@ -82,21 +88,23 @@ module.exports = {
       if (inputs.importType === Board.ImportTypes.TRELLO) {
         boardImport = {
           type: inputs.importType,
-          board: await sails.helpers.boards.processUploadedTrelloImportFile(file),
+          board:
+            await sails.helpers.boards.processUploadedTrelloImportFile(file),
         };
       }
     }
 
-    const { board, boardMembership } = await sails.helpers.boards.createOne.with({
-      values: {
-        ...values,
-        project,
-      },
-      import: boardImport,
-      actorUser: currentUser,
-      requestId: inputs.requestId,
-      request: this.req,
-    });
+    const { board, boardMembership } =
+      await sails.helpers.boards.createOne.with({
+        values: {
+          ...values,
+          project,
+        },
+        import: boardImport,
+        actorUser: currentUser,
+        requestId: inputs.requestId,
+        request: this.req,
+      });
 
     return {
       item: board,

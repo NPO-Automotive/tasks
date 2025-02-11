@@ -27,15 +27,24 @@ export default {
       all: 'Wszystko',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Wszystkie zmiany zostaną automatycznie zapisane<br />po przywróceniu połączenia.',
-      areYouSureYouWantToDeleteThisAttachment: 'Jesteś pewien że chcesz usunąć ten załącznik?',
-      areYouSureYouWantToDeleteThisBoard: 'Jesteś pewien że chcesz usunąć tę tablicę?',
-      areYouSureYouWantToDeleteThisCard: 'Jesteś pewien że chcesz usunąć tę kartę?',
-      areYouSureYouWantToDeleteThisComment: 'Jesteś pewien że chcesz usunąć ten komentarz?',
-      areYouSureYouWantToDeleteThisLabel: 'Jesteś pewien że chcesz usunąć to oznaczenie?',
-      areYouSureYouWantToDeleteThisList: 'Jesteś pewien że chcesz usunąć tę listę?',
-      areYouSureYouWantToDeleteThisProject: 'Jesteś pewien że chcesz usunąć ten projekt?',
-      areYouSureYouWantToDeleteThisTask: 'Jesteś pewien że chcesz usunąć to zadanie?',
-      areYouSureYouWantToDeleteThisUser: 'Jesteś pewien że chcesz usunąć tego użytkownika?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Jesteś pewien że chcesz usunąć ten załącznik?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Jesteś pewien że chcesz usunąć tę tablicę?',
+      areYouSureYouWantToDeleteThisCard:
+        'Jesteś pewien że chcesz usunąć tę kartę?',
+      areYouSureYouWantToDeleteThisComment:
+        'Jesteś pewien że chcesz usunąć ten komentarz?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Jesteś pewien że chcesz usunąć to oznaczenie?',
+      areYouSureYouWantToDeleteThisList:
+        'Jesteś pewien że chcesz usunąć tę listę?',
+      areYouSureYouWantToDeleteThisProject:
+        'Jesteś pewien że chcesz usunąć ten projekt?',
+      areYouSureYouWantToDeleteThisTask:
+        'Jesteś pewien że chcesz usunąć to zadanie?',
+      areYouSureYouWantToDeleteThisUser:
+        'Jesteś pewien że chcesz usunąć tego użytkownika?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Jesteś pewien że chcesz usunąć tego zarządce z projektu?',
       areYouSureYouWantToRemoveThisMemberFromProject:
@@ -56,7 +65,8 @@ export default {
       copy_inline: 'kopiuj',
       createBoard_title: 'Utwórz Tablicę',
       createLabel_title: 'Utwórz Oznaczenie',
-      createNewOneOrSelectExistingOne: 'Utwórz nowy lub wybierz<br />istniejący.',
+      createNewOneOrSelectExistingOne:
+        'Utwórz nowy lub wybierz<br />istniejący.',
       createProject_title: 'Utwórz Projekt',
       createTextFile_title: 'Utwórz Plik Tekstowy',
       currentPassword: 'Aktualne hasło',
@@ -155,12 +165,15 @@ export default {
       subscribeToMyOwnCardsByDefault: 'Zapisz mnie do moich kart automatycznie',
       taskActions_title: 'Akcje Zadania',
       tasks: 'Zadania',
-      thereIsNoPreviewAvailableForThisAttachment: 'Brak podglądu dostępnego dla tego załącznika.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Brak podglądu dostępnego dla tego załącznika.',
       time: 'Czas',
       title: 'Tytuł',
       userActions_title: 'Akcje użytkownika',
-      userAddedThisCardToList: '<0>{{user}}</0><1> dodał tę kartę w {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} zamieścił nowy komentarz «{{comment}}» w <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> dodał tę kartę w {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} zamieścił nowy komentarz «{{comment}}» w <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} przeniósł <2>{{card}}</2> z {{fromList}} do {{toList}}',
       userMovedThisCardFromListToList:

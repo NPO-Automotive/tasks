@@ -5,7 +5,8 @@ const { rimraf } = require('rimraf');
 
 const PATH_SEGMENT_TO_URL_REPLACE_REGEX = /(public|private)\//;
 
-const buildPath = (pathSegment) => path.join(sails.config.custom.uploadsBasePath, pathSegment);
+const buildPath = (pathSegment) =>
+  path.join(sails.config.custom.uploadsBasePath, pathSegment);
 
 class LocalFileManager {
   // eslint-disable-next-line class-methods-use-this

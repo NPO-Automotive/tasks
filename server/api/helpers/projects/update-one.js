@@ -7,7 +7,10 @@ const valuesValidator = (value) => {
     return false;
   }
 
-  if (!_.isNil(value.backgroundImage) && !_.isPlainObject(value.backgroundImage)) {
+  if (
+    !_.isNil(value.backgroundImage) &&
+    !_.isPlainObject(value.backgroundImage)
+  ) {
     return false;
   }
 
@@ -81,7 +84,8 @@ module.exports = {
       if (
         inputs.record.backgroundImage &&
         (!project.backgroundImage ||
-          project.backgroundImage.dirname !== inputs.record.backgroundImage.dirname)
+          project.backgroundImage.dirname !==
+            inputs.record.backgroundImage.dirname)
       ) {
         const fileManager = sails.hooks['file-manager'].getInstance();
 
@@ -94,9 +98,10 @@ module.exports = {
         }
       }
 
-      const projectRelatedUserIds = await sails.helpers.projects.getManagerAndBoardMemberUserIds(
-        project.id,
-      );
+      const projectRelatedUserIds =
+        await sails.helpers.projects.getManagerAndBoardMemberUserIds(
+          project.id,
+        );
 
       projectRelatedUserIds.forEach((userId) => {
         sails.sockets.broadcast(

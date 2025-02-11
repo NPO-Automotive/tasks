@@ -37,7 +37,10 @@ module.exports = {
     let { boardMembership } = path;
     const { board, project } = path;
 
-    const isProjectManager = await sails.helpers.users.isProjectManager(currentUser.id, project.id);
+    const isProjectManager = await sails.helpers.users.isProjectManager(
+      currentUser.id,
+      project.id,
+    );
 
     if (!isProjectManager) {
       throw Errors.BOARD_MEMBERSHIP_NOT_FOUND; // Forbidden

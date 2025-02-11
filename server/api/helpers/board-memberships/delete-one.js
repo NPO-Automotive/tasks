@@ -24,7 +24,9 @@ module.exports = {
   },
 
   async fn(inputs) {
-    const cardIds = await sails.helpers.boards.getCardIds(inputs.record.boardId);
+    const cardIds = await sails.helpers.boards.getCardIds(
+      inputs.record.boardId,
+    );
 
     await CardSubscription.destroy({
       cardId: cardIds,
@@ -70,16 +72,20 @@ module.exports = {
       if (isProjectManager) {
         const tempRoom = uuid();
 
-        sails.sockets.addRoomMembersToRooms(`board:${boardMembership.boardId}`, tempRoom, () => {
-          sails.sockets.removeRoomMembersFromRooms(
-            `user:${boardMembership.userId}`,
-            tempRoom,
-            () => {
-              notify(tempRoom);
-              sails.sockets.removeRoomMembersFromRooms(tempRoom, tempRoom);
-            },
-          );
-        });
+        sails.sockets.addRoomMembersToRooms(
+          `board:${boardMembership.boardId}`,
+          tempRoom,
+          () => {
+            sails.sockets.removeRoomMembersFromRooms(
+              `user:${boardMembership.userId}`,
+              tempRoom,
+              () => {
+                notify(tempRoom);
+                sails.sockets.removeRoomMembersFromRooms(tempRoom, tempRoom);
+              },
+            );
+          },
+        );
       }
 
       sails.helpers.utils.sendWebhooks.with({

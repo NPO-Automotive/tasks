@@ -7,7 +7,9 @@ async function doUpload(paramName, req, options) {
     dirname: options.dirname || sails.config.custom.uploadsTempPath,
   };
   const upload = util.promisify((opts, callback) => {
-    return req.file(paramName).upload(opts, (error, files) => callback(error, files));
+    return req
+      .file(paramName)
+      .upload(opts, (error, files) => callback(error, files));
   });
   return upload(uploadOptions);
 }
@@ -20,7 +22,8 @@ module.exports = {
     paramName: {
       type: 'string',
       required: true,
-      description: 'The MIME multi-part parameter containing the file to receive.',
+      description:
+        'The MIME multi-part parameter containing the file to receive.',
     },
     req: {
       type: 'ref',

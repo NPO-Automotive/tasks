@@ -27,17 +27,28 @@ export default {
       all: 'Todos',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Todas as alterações serão salvas automaticamente<br />após a conexão ser restaurada.',
-      areYouSureYouWantToDeleteThisAttachment: 'Tem certeza de que deseja excluir este anexo?',
-      areYouSureYouWantToDeleteThisBoard: 'Tem certeza de que deseja excluir este quadro?',
-      areYouSureYouWantToDeleteThisCard: 'Tem certeza de que deseja excluir este cartão?',
-      areYouSureYouWantToDeleteThisComment: 'Tem certeza de que deseja excluir este comentário?',
-      areYouSureYouWantToDeleteThisLabel: 'Tem certeza de que deseja excluir este rótulo?',
-      areYouSureYouWantToDeleteThisList: 'Tem certeza de que deseja excluir esta lista?',
-      areYouSureYouWantToDeleteThisProject: 'Tem certeza de que deseja excluir este projeto?',
-      areYouSureYouWantToDeleteThisTask: 'Tem certeza de que deseja excluir esta tarefa?',
-      areYouSureYouWantToDeleteThisUser: 'Tem certeza de que deseja excluir este usuário?',
-      areYouSureYouWantToLeaveBoard: 'Tem certeza de que deseja sair do quadro?',
-      areYouSureYouWantToLeaveProject: 'Tem certeza de que deseja sair do projeto?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Tem certeza de que deseja excluir este anexo?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Tem certeza de que deseja excluir este quadro?',
+      areYouSureYouWantToDeleteThisCard:
+        'Tem certeza de que deseja excluir este cartão?',
+      areYouSureYouWantToDeleteThisComment:
+        'Tem certeza de que deseja excluir este comentário?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Tem certeza de que deseja excluir este rótulo?',
+      areYouSureYouWantToDeleteThisList:
+        'Tem certeza de que deseja excluir esta lista?',
+      areYouSureYouWantToDeleteThisProject:
+        'Tem certeza de que deseja excluir este projeto?',
+      areYouSureYouWantToDeleteThisTask:
+        'Tem certeza de que deseja excluir esta tarefa?',
+      areYouSureYouWantToDeleteThisUser:
+        'Tem certeza de que deseja excluir este usuário?',
+      areYouSureYouWantToLeaveBoard:
+        'Tem certeza de que deseja sair do quadro?',
+      areYouSureYouWantToLeaveProject:
+        'Tem certeza de que deseja sair do projeto?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Tem certeza de que deseja remover este gerente do projeto?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -57,7 +68,8 @@ export default {
       color: 'Cor',
       createBoard_title: 'Criar Quadro',
       createLabel_title: 'Criar Rótulo',
-      createNewOneOrSelectExistingOne: 'Criar um novo ou selecionar<br />um existente.',
+      createNewOneOrSelectExistingOne:
+        'Criar um novo ou selecionar<br />um existente.',
       createProject_title: 'Criar Projeto',
       createTextFile_title: 'Criar Arquivo de Texto',
       currentPassword: 'Senha atual',
@@ -90,7 +102,8 @@ export default {
       editUsername_title: 'Editar Nome de Usuário',
       email: 'E-mail',
       emailAlreadyInUse: 'E-mail já está em uso',
-      enterCardTitle: 'Digite o título do cartão... [Ctrl+Enter] para abrir automaticamente.',
+      enterCardTitle:
+        'Digite o título do cartão... [Ctrl+Enter] para abrir automaticamente.',
       enterDescription: 'Digite a descrição...',
       enterFilename: 'Digite o nome do arquivo',
       enterListTitle: 'Digite o título da lista...',
@@ -145,7 +158,8 @@ export default {
       selectProject: 'Selecionar projeto',
       settings: 'Configurações',
       stopwatch: 'Cronômetro',
-      subscribeToMyOwnCardsByDefault: 'Inscrever-se automaticamente em meus próprios cartões',
+      subscribeToMyOwnCardsByDefault:
+        'Inscrever-se automaticamente em meus próprios cartões',
       taskActions_title: 'Ações da Tarefa',
       tasks: 'Tarefas',
       thereIsNoPreviewAvailableForThisAttachment:
@@ -153,10 +167,12 @@ export default {
       time: 'Tempo',
       title: 'Título',
       userActions_title: 'Ações do Usuário',
-      userAddedThisCardToList: '<0>{{user}}</0><1> adicionou este cartão a {{list}}</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> adicionou este cartão a {{list}}</1>',
       userLeftNewCommentToCard:
         '{{user}} deixou um novo comentário «{{comment}}» em <2>{{card}}</2>',
-      userMovedCardFromListToList: '{{user}} moveu <2>{{card}}</2> de {{fromList}} para {{toList}}',
+      userMovedCardFromListToList:
+        '{{user}} moveu <2>{{card}}</2> de {{fromList}} para {{toList}}',
       userMovedThisCardFromListToList:
         '<0>{{user}}</0><1> moveu este cartão de {{fromList}} para {{toList}}</1>',
       username: 'Nome de usuário',

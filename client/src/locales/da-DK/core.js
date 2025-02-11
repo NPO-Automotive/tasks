@@ -26,7 +26,8 @@ export default {
       all: 'Alle',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Alle ændringer vil automatisk blive gemt<br />ved genforbindelse.',
-      areYouSureYouWantToDeleteThisAttachment: 'Vil du slette den vedhæftede fil?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Vil du slette den vedhæftede fil?',
       areYouSureYouWantToDeleteThisBoard: 'Vil du slette dette bræt?',
       areYouSureYouWantToDeleteThisCard: 'Vil du slette dette kort?',
       areYouSureYouWantToDeleteThisComment: 'Vil du slette denne kommentar?',
@@ -39,7 +40,8 @@ export default {
       areYouSureYouWantToLeaveProject: 'Vil du forlade dette projekt?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Vil du slette denne projektleder fra projektet?',
-      areYouSureYouWantToRemoveThisMemberFromBoard: 'Vil du slette dette medlem fra projektet?',
+      areYouSureYouWantToRemoveThisMemberFromBoard:
+        'Vil du slette dette medlem fra projektet?',
       attachment: 'Vedhæftede fil',
       attachments: 'Vedhæftede filer',
       authentication: 'Brugervalidering',
@@ -52,7 +54,8 @@ export default {
       color: 'Farve',
       createBoard_title: 'Opret bræt',
       createLabel_title: 'Opret mærkat',
-      createNewOneOrSelectExistingOne: 'Lav en ny eller marker<br />en eksisterende.',
+      createNewOneOrSelectExistingOne:
+        'Lav en ny eller marker<br />en eksisterende.',
       createProject_title: 'Opret projekt',
       createTextFile_title: 'Opret tekstfil',
       currentPassword: 'Nuværende løsen',
@@ -135,8 +138,10 @@ export default {
       time: 'Tid',
       title: 'Overskrift',
       userActions_title: 'Brugerhandlinger',
-      userAddedThisCardToList: '<0>{{user}}</0><1> tilføjede kortet til {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} skrevet en ny kommentar «{{comment}}» på <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> tilføjede kortet til {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} skrevet en ny kommentar «{{comment}}» på <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} flyttede <2>{{card}}</2> fra {{fromList}} til {{toList}}',
       userMovedThisCardFromListToList:

@@ -28,7 +28,10 @@ module.exports = {
       .getProjectPath(inputs.id)
       .intercept('pathNotFound', () => Errors.ATTACHMENT_NOT_FOUND);
 
-    const isBoardMember = await sails.helpers.users.isBoardMember(currentUser.id, card.boardId);
+    const isBoardMember = await sails.helpers.users.isBoardMember(
+      currentUser.id,
+      card.boardId,
+    );
 
     if (!isBoardMember) {
       const isProjectManager = await sails.helpers.users.isProjectManager(

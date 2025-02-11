@@ -29,16 +29,26 @@ export default {
         'تمام تغییرات به صورت خودکار ذخیره می‌شوند<br />بعد از بازیابی ارتباط.',
       areYouSureYouWantToDeleteThisAttachment:
         'آیا مطمئن هستید که می‌خواهید این پیوست را حذف کنید؟',
-      areYouSureYouWantToDeleteThisBoard: 'آیا مطمئن هستید که می‌خواهید این برد را حذف کنید؟',
-      areYouSureYouWantToDeleteThisCard: 'آیا مطمئن هستید که می‌خواهید این کارت را حذف کنید؟',
-      areYouSureYouWantToDeleteThisComment: 'آیا مطمئن هستید که می‌خواهید این نظر را حذف کنید؟',
-      areYouSureYouWantToDeleteThisLabel: 'آیا مطمئن هستید که می‌خواهید این برچسب را حذف کنید؟',
-      areYouSureYouWantToDeleteThisList: 'آیا مطمئن هستید که می‌خواهید این لیست را حذف کنید؟',
-      areYouSureYouWantToDeleteThisProject: 'آیا مطمئن هستید که می‌خواهید این پروژه را حذف کنید؟',
-      areYouSureYouWantToDeleteThisTask: 'آیا مطمئن هستید که می‌خواهید این وظیفه را حذف کنید؟',
-      areYouSureYouWantToDeleteThisUser: 'آیا مطمئن هستید که می‌خواهید این کاربر را حذف کنید؟',
-      areYouSureYouWantToLeaveBoard: 'آیا مطمئن هستید که می‌خواهید از برد خارج شوید؟',
-      areYouSureYouWantToLeaveProject: 'آیا مطمئن هستید که می‌خواهید از پروژه خارج شوید؟',
+      areYouSureYouWantToDeleteThisBoard:
+        'آیا مطمئن هستید که می‌خواهید این برد را حذف کنید؟',
+      areYouSureYouWantToDeleteThisCard:
+        'آیا مطمئن هستید که می‌خواهید این کارت را حذف کنید؟',
+      areYouSureYouWantToDeleteThisComment:
+        'آیا مطمئن هستید که می‌خواهید این نظر را حذف کنید؟',
+      areYouSureYouWantToDeleteThisLabel:
+        'آیا مطمئن هستید که می‌خواهید این برچسب را حذف کنید؟',
+      areYouSureYouWantToDeleteThisList:
+        'آیا مطمئن هستید که می‌خواهید این لیست را حذف کنید؟',
+      areYouSureYouWantToDeleteThisProject:
+        'آیا مطمئن هستید که می‌خواهید این پروژه را حذف کنید؟',
+      areYouSureYouWantToDeleteThisTask:
+        'آیا مطمئن هستید که می‌خواهید این وظیفه را حذف کنید؟',
+      areYouSureYouWantToDeleteThisUser:
+        'آیا مطمئن هستید که می‌خواهید این کاربر را حذف کنید؟',
+      areYouSureYouWantToLeaveBoard:
+        'آیا مطمئن هستید که می‌خواهید از برد خارج شوید؟',
+      areYouSureYouWantToLeaveProject:
+        'آیا مطمئن هستید که می‌خواهید از پروژه خارج شوید؟',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'آیا مطمئن هستید که می‌خواهید این مدیر را از پروژه حذف کنید؟',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -59,7 +69,8 @@ export default {
       copy_inline: 'کپی',
       createBoard_title: 'ایجاد برد',
       createLabel_title: 'ایجاد برچسب',
-      createNewOneOrSelectExistingOne: 'یک جدید ایجاد کنید یا<br />یکی موجود را انتخاب کنید.',
+      createNewOneOrSelectExistingOne:
+        'یک جدید ایجاد کنید یا<br />یکی موجود را انتخاب کنید.',
       createProject_title: 'ایجاد پروژه',
       createTextFile_title: 'ایجاد فایل متنی',
       currentPassword: 'رمز عبور فعلی',
@@ -93,7 +104,8 @@ export default {
       editUsername_title: 'ویرایش نام کاربری',
       email: 'ایمیل',
       emailAlreadyInUse: 'ایمیل قبلا استفاده شده است',
-      enterCardTitle: 'عنوان کارت را وارد کنید... [Ctrl+Enter] برای باز شدن خودکار.',
+      enterCardTitle:
+        'عنوان کارت را وارد کنید... [Ctrl+Enter] برای باز شدن خودکار.',
       enterDescription: 'توضیحات را وارد کنید...',
       enterFilename: 'نام فایل را وارد کنید',
       enterListTitle: 'عنوان لیست را وارد کنید...',
@@ -155,15 +167,19 @@ export default {
       settings: 'تنظیمات',
       sortList_title: 'مرتب‌سازی لیست',
       stopwatch: 'کرنومتر',
-      subscribeToMyOwnCardsByDefault: 'به طور پیش‌فرض به کارت‌های خودم مشترک شوم',
+      subscribeToMyOwnCardsByDefault:
+        'به طور پیش‌فرض به کارت‌های خودم مشترک شوم',
       taskActions_title: 'اقدامات وظیفه',
       tasks: 'وظایف',
-      thereIsNoPreviewAvailableForThisAttachment: 'پیش نمایشی برای این پیوست موجود نیست.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'پیش نمایشی برای این پیوست موجود نیست.',
       time: 'زمان',
       title: 'عنوان',
       userActions_title: 'اقدامات کاربر',
-      userAddedThisCardToList: '<0>{{user}}</0><1> این کارت را به {{list}} اضافه کرد</1>',
-      userLeftNewCommentToCard: '{{user}} نظر جدید «{{comment}}» را به <2>{{card}}</2> اضافه کرد',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> این کارت را به {{list}} اضافه کرد</1>',
+      userLeftNewCommentToCard:
+        '{{user}} نظر جدید «{{comment}}» را به <2>{{card}}</2> اضافه کرد',
       userMovedCardFromListToList:
         '{{user}} <2>{{card}}</2> را از {{fromList}} به {{toList}} منتقل کرد',
       userMovedThisCardFromListToList:

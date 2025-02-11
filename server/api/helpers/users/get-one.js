@@ -1,4 +1,5 @@
-const criteriaValidator = (value) => _.isString(value) || _.isPlainObject(value);
+const criteriaValidator = (value) =>
+  _.isString(value) || _.isPlainObject(value);
 
 module.exports = {
   inputs: {

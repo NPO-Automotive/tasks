@@ -36,7 +36,9 @@ module.exports = {
   async fn(inputs) {
     const { values } = inputs;
 
-    const attachment = await Attachment.updateOne(inputs.record.id).set({ ...values });
+    const attachment = await Attachment.updateOne(inputs.record.id).set({
+      ...values,
+    });
 
     if (attachment) {
       sails.sockets.broadcast(

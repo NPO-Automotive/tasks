@@ -26,7 +26,8 @@ export default {
       all: 'Barchasi',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         "Barcha o'zgarishlar tarmoq ulanishi tiklangandan so'ng<br />avtomatik saqlanadi.",
-      areYouSureYouWantToDeleteThisAttachment: "Ushbu biriktirmani o'chirmoqchimisiz?",
+      areYouSureYouWantToDeleteThisAttachment:
+        "Ushbu biriktirmani o'chirmoqchimisiz?",
       areYouSureYouWantToDeleteThisBoard: "Ushbu doskani o'chirmoqchimisiz?",
       areYouSureYouWantToDeleteThisCard: "Ushbu kartani o'chirmoqchimisiz?",
       areYouSureYouWantToDeleteThisComment: "Ushbu izohni o'chirmoqchimisiz?",
@@ -34,12 +35,14 @@ export default {
       areYouSureYouWantToDeleteThisList: "Ushbu ro'yxatni o'chirmoqchimisiz?",
       areYouSureYouWantToDeleteThisProject: "Ushbu loyihani o'chirmoqchimisiz?",
       areYouSureYouWantToDeleteThisTask: "Ushbu topshiriqni o'chirmoqchimisiz?",
-      areYouSureYouWantToDeleteThisUser: "Ushbu foydalanuvchini o'chirmoqchimisiz?",
+      areYouSureYouWantToDeleteThisUser:
+        "Ushbu foydalanuvchini o'chirmoqchimisiz?",
       areYouSureYouWantToLeaveBoard: 'Ushbu doskadan chiqmoqchimisiz?',
       areYouSureYouWantToLeaveProject: 'Ushbu loyihadan chiqmoqchimisiz?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         "Ushbu boshqaruvchini loyihadan o'chirmoqchimisiz?",
-      areYouSureYouWantToRemoveThisMemberFromBoard: "Ushbu a'zoni doskadan o'chirmoqchimisiz?",
+      areYouSureYouWantToRemoveThisMemberFromBoard:
+        "Ushbu a'zoni doskadan o'chirmoqchimisiz?",
       attachment: 'Ilova',
       attachments: 'Ilovalar',
       authentication: 'Autentifikatsiya',
@@ -52,7 +55,8 @@ export default {
       color: 'Rang',
       createBoard_title: 'Doska Yaratish',
       createLabel_title: 'Yorliq Yaratish',
-      createNewOneOrSelectExistingOne: "Yangisini tanlash yoki<br />mavjud bo'lganini tanlash.",
+      createNewOneOrSelectExistingOne:
+        "Yangisini tanlash yoki<br />mavjud bo'lganini tanlash.",
       createProject_title: 'Loyiha Yaratish',
       createTextFile_title: 'Matnli fayl yaratish',
       currentPassword: 'Hozirgi parol',
@@ -129,14 +133,17 @@ export default {
       selectProject: "Loyihani '",
       settings: 'Sozlamalar',
       stopwatch: 'Taymer',
-      subscribeToMyOwnCardsByDefault: "Odatiy holda o'z kartalarimga obuna bo'ling",
+      subscribeToMyOwnCardsByDefault:
+        "Odatiy holda o'z kartalarimga obuna bo'ling",
       taskActions_title: 'Vazifa Amallari',
       tasks: 'Vazifalar',
       time: 'Vaqt',
       title: 'Sarlavha',
       userActions_title: 'Foydalanuvchi Amallari',
-      userAddedThisCardToList: "<1>Ushbu kartani {{list}} ga</1><0>{{user}}</0> qo'shdi",
-      userLeftNewCommentToCard: '{{user}} <2>{{card}}</2> ga yangi izoh qoldirdi «{{comment}}»',
+      userAddedThisCardToList:
+        "<1>Ushbu kartani {{list}} ga</1><0>{{user}}</0> qo'shdi",
+      userLeftNewCommentToCard:
+        '{{user}} <2>{{card}}</2> ga yangi izoh qoldirdi «{{comment}}»',
       userMovedCardFromListToList:
         "{{user}} <2>{{card}}</2> ni {{fromList}} dan {{toList}} ga ko'chirdi",
       userMovedThisCardFromListToList:
@@ -203,7 +210,8 @@ export default {
       removeManager: "Boshqaruvchini o'chirish",
       removeMember: "A'zoni o'chirish",
       save: 'Saqlash',
-      showAllAttachments: "Barcha ilovalarni ko'rsatish ({{hidden}} yashirilgan)",
+      showAllAttachments:
+        "Barcha ilovalarni ko'rsatish ({{hidden}} yashirilgan)",
       showFewerAttachments: "Kamroq ilovalarni ko'rsatish",
       start: 'Boshlash',
       stop: "To'xtatish",

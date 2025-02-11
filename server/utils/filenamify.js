@@ -24,10 +24,16 @@ function filenamify(string, options = {}) {
     throw new TypeError('Expected a string');
   }
 
-  const replacement = options.replacement === undefined ? '!' : options.replacement;
+  const replacement =
+    options.replacement === undefined ? '!' : options.replacement;
 
-  if (filenameReservedRegex().test(replacement) && reControlChars.test(replacement)) {
-    throw new Error('Replacement string cannot contain reserved filename characters');
+  if (
+    filenameReservedRegex().test(replacement) &&
+    reControlChars.test(replacement)
+  ) {
+    throw new Error(
+      'Replacement string cannot contain reserved filename characters',
+    );
   }
 
   /* eslint-disable no-param-reassign */
@@ -55,9 +61,13 @@ function filenamify(string, options = {}) {
     }
   }
 
-  string = windowsReservedNameRegex().test(string) ? string + replacement : string;
+  string = windowsReservedNameRegex().test(string)
+    ? string + replacement
+    : string;
   const allowedLength =
-    typeof options.maxLength === 'number' ? options.maxLength : MAX_FILENAME_LENGTH;
+    typeof options.maxLength === 'number'
+      ? options.maxLength
+      : MAX_FILENAME_LENGTH;
   if (string.length > allowedLength) {
     const extensionIndex = string.lastIndexOf('.');
     if (extensionIndex === -1) {
@@ -65,7 +75,9 @@ function filenamify(string, options = {}) {
     } else {
       const filename = string.slice(0, extensionIndex);
       const extension = string.slice(extensionIndex);
-      string = filename.slice(0, Math.max(1, allowedLength - extension.length)) + extension;
+      string =
+        filename.slice(0, Math.max(1, allowedLength - extension.length)) +
+        extension;
     }
   }
   /* eslint-enable no-param-reassign */

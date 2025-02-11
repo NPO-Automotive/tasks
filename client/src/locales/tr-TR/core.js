@@ -26,17 +26,28 @@ export default {
       all: 'Tümü',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Bağlantı yeniden kurulduğunda tüm değişiklikler kaydedilecektir.',
-      areYouSureYouWantToDeleteThisAttachment: 'Bu eki silmek istediğinize emin misiniz?',
-      areYouSureYouWantToDeleteThisBoard: 'Bu panoyu silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToDeleteThisCard: 'Bu kartı silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToDeleteThisComment: 'Bu yorumu silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToDeleteThisLabel: 'Bu etiketi silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToDeleteThisList: 'Bu listeyi silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToDeleteThisProject: 'Bu projeyi silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToDeleteThisTask: 'Bu görevi silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToDeleteThisUser: 'Bu kullanıcıyı silmek istediğinizden emin misiniz?',
-      areYouSureYouWantToLeaveBoard: 'Panodan ayrılmak istediğinizden emin misiniz?',
-      areYouSureYouWantToLeaveProject: 'Projeden ayrılmak istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Bu eki silmek istediğinize emin misiniz?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Bu panoyu silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisCard:
+        'Bu kartı silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisComment:
+        'Bu yorumu silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Bu etiketi silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisList:
+        'Bu listeyi silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisProject:
+        'Bu projeyi silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisTask:
+        'Bu görevi silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToDeleteThisUser:
+        'Bu kullanıcıyı silmek istediğinizden emin misiniz?',
+      areYouSureYouWantToLeaveBoard:
+        'Panodan ayrılmak istediğinizden emin misiniz?',
+      areYouSureYouWantToLeaveProject:
+        'Projeden ayrılmak istediğinizden emin misiniz?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Bu yöneticiyi projeden çıkarmak istediğinizden emin misiniz?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -53,7 +64,8 @@ export default {
       color: 'renk',
       createBoard_title: 'Pano Oluştur',
       createLabel_title: 'Etiket Oluştur',
-      createNewOneOrSelectExistingOne: 'Yeni bir tane oluşturun veya mevcut bir tanesini seçin.',
+      createNewOneOrSelectExistingOne:
+        'Yeni bir tane oluşturun veya mevcut bir tanesini seçin.',
       createProject_title: 'Proje Oluştur',
       createTextFile_title: 'Metin Dosyası Oluştur',
       currentPassword: 'Geçerli şifre',
@@ -132,14 +144,17 @@ export default {
       selectProject: 'Proje seç',
       settings: 'Ayarlar',
       stopwatch: 'kronometre',
-      subscribeToMyOwnCardsByDefault: 'Varsayılan olarak kendi kartlarıma abone ol',
+      subscribeToMyOwnCardsByDefault:
+        'Varsayılan olarak kendi kartlarıma abone ol',
       taskActions_title: 'Görev Eylemleri',
       tasks: 'Görevler',
-      thereIsNoPreviewAvailableForThisAttachment: 'Bu ek için önizleme mevcut değil.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Bu ek için önizleme mevcut değil.',
       time: 'zaman',
       title: 'başlık',
       userActions_title: 'Kullanıcı İşlemleri',
-      userAddedThisCardToList: '<0>{{user}}</0><1> bu kartı {{list}</1> listesine ekledi',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> bu kartı {{list}</1> listesine ekledi',
       userLeftNewCommentToCard:
         '{{user}} yeni bir yorum yazdı: <2>{{card}</2> kartına «{{comment}}»',
       userMovedCardFromListToList:

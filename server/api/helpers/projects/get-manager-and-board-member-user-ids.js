@@ -1,4 +1,5 @@
-const idOrIdsValidator = (value) => _.isString(value) || _.every(value, _.isString);
+const idOrIdsValidator = (value) =>
+  _.isString(value) || _.every(value, _.isString);
 
 module.exports = {
   inputs: {
@@ -10,8 +11,10 @@ module.exports = {
   },
 
   async fn(inputs) {
-    const projectManagerUserIds = await sails.helpers.projects.getManagerUserIds(inputs.idOrIds);
-    const boardMemberUserIds = await sails.helpers.projects.getBoardMemberUserIds(inputs.idOrIds);
+    const projectManagerUserIds =
+      await sails.helpers.projects.getManagerUserIds(inputs.idOrIds);
+    const boardMemberUserIds =
+      await sails.helpers.projects.getBoardMemberUserIds(inputs.idOrIds);
 
     return _.union(projectManagerUserIds, boardMemberUserIds);
   },

@@ -19,7 +19,8 @@ module.exports = {
   async fn(inputs) {
     const trelloToPlankaLabels = {};
 
-    const getTrelloLists = () => inputs.trelloBoard.lists.filter((list) => !list.closed);
+    const getTrelloLists = () =>
+      inputs.trelloBoard.lists.filter((list) => !list.closed);
 
     const getUsedTrelloLabels = () => {
       const result = {};
@@ -34,7 +35,9 @@ module.exports = {
     };
 
     const getTrelloCardsOfList = (listId) =>
-      inputs.trelloBoard.cards.filter((card) => card.idList === listId && !card.closed);
+      inputs.trelloBoard.cards.filter(
+        (card) => card.idList === listId && !card.closed,
+      );
 
     const getAllTrelloCheckItemsOfCard = (cardId) =>
       inputs.trelloBoard.checklists
@@ -52,7 +55,8 @@ module.exports = {
       );
 
     const getPlankaLabelColor = (trelloLabelColor) =>
-      Label.COLORS.find((color) => color.indexOf(trelloLabelColor) !== -1) || 'desert-sand';
+      Label.COLORS.find((color) => color.indexOf(trelloLabelColor) !== -1) ||
+      'desert-sand';
 
     const importCardLabels = async (plankaCard, trelloCard) => {
       return Promise.all(
@@ -68,20 +72,24 @@ module.exports = {
     const importTasks = async (plankaCard, trelloCard) => {
       // TODO find workaround for tasks/checklist mismapping, see issue trello2planka#5
       return Promise.all(
-        getAllTrelloCheckItemsOfCard(trelloCard.id).map(async (trelloCheckItem) => {
-          return Task.create({
-            cardId: plankaCard.id,
-            position: trelloCheckItem.pos,
-            name: trelloCheckItem.name,
-            isCompleted: trelloCheckItem.state === 'complete',
-          }).fetch();
-        }),
+        getAllTrelloCheckItemsOfCard(trelloCard.id).map(
+          async (trelloCheckItem) => {
+            return Task.create({
+              cardId: plankaCard.id,
+              position: trelloCheckItem.pos,
+              name: trelloCheckItem.name,
+              isCompleted: trelloCheckItem.state === 'complete',
+            }).fetch();
+          },
+        ),
       );
     };
 
     const importComments = async (plankaCard, trelloCard) => {
       const trelloComments = getTrelloCommentsOfCard(trelloCard.id);
-      trelloComments.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+      trelloComments.sort(
+        (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+      );
 
       return Promise.all(
         trelloComments.map(async (trelloComment) => {

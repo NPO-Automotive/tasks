@@ -27,20 +27,30 @@ export default {
       all: 'Összes',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Az összes változás automatikusan mentésre kerül a kapcsolat helyreállása után.',
-      areYouSureYouWantToDeleteThisAttachment: 'Biztosan törölni szeretné ezt a mellékletet?',
-      areYouSureYouWantToDeleteThisBoard: 'Biztosan törölni szeretné ezt a táblát?',
-      areYouSureYouWantToDeleteThisCard: 'Biztosan törölni szeretné ezt a kártyát?',
-      areYouSureYouWantToDeleteThisComment: 'Biztosan törölni szeretné ezt a megjegyzést?',
-      areYouSureYouWantToDeleteThisLabel: 'Biztosan törölni szeretné ezt a címkét?',
-      areYouSureYouWantToDeleteThisList: 'Biztosan törölni szeretné ezt a listát?',
-      areYouSureYouWantToDeleteThisProject: 'Biztosan törölni szeretné ezt a projektet?',
-      areYouSureYouWantToDeleteThisTask: 'Biztosan törölni szeretné ezt a feladatot?',
-      areYouSureYouWantToDeleteThisUser: 'Biztosan törölni szeretné ezt a felhasználót?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Biztosan törölni szeretné ezt a mellékletet?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Biztosan törölni szeretné ezt a táblát?',
+      areYouSureYouWantToDeleteThisCard:
+        'Biztosan törölni szeretné ezt a kártyát?',
+      areYouSureYouWantToDeleteThisComment:
+        'Biztosan törölni szeretné ezt a megjegyzést?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Biztosan törölni szeretné ezt a címkét?',
+      areYouSureYouWantToDeleteThisList:
+        'Biztosan törölni szeretné ezt a listát?',
+      areYouSureYouWantToDeleteThisProject:
+        'Biztosan törölni szeretné ezt a projektet?',
+      areYouSureYouWantToDeleteThisTask:
+        'Biztosan törölni szeretné ezt a feladatot?',
+      areYouSureYouWantToDeleteThisUser:
+        'Biztosan törölni szeretné ezt a felhasználót?',
       areYouSureYouWantToLeaveBoard: 'Biztosan el akarja hagyni a táblát?',
       areYouSureYouWantToLeaveProject: 'Biztosan el akarja hagyni a projektet?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Biztosan eltávolítja ezt a menedzsert a projektből?',
-      areYouSureYouWantToRemoveThisMemberFromBoard: 'Biztosan eltávolítja ezt a tagot a tábláról?',
+      areYouSureYouWantToRemoveThisMemberFromBoard:
+        'Biztosan eltávolítja ezt a tagot a tábláról?',
       attachment: 'Melléklet',
       attachments: 'Mellékletek',
       authentication: 'Hitelesítés',
@@ -57,7 +67,8 @@ export default {
       copy_inline: 'másolás',
       createBoard_title: 'Tábla létrehozása',
       createLabel_title: 'Címke létrehozása',
-      createNewOneOrSelectExistingOne: 'Hozzon létre egy újat, vagy válasszon ki egy meglévőt.',
+      createNewOneOrSelectExistingOne:
+        'Hozzon létre egy újat, vagy válasszon ki egy meglévőt.',
       createProject_title: 'Projekt létrehozása',
       createTextFile_title: 'Szövegfájl létrehozása',
       currentPassword: 'Jelenlegi jelszó',
@@ -91,7 +102,8 @@ export default {
       editUsername_title: 'Felhasználónév szerkesztése',
       email: 'E-mail',
       emailAlreadyInUse: 'Az e-mail cím már használatban van',
-      enterCardTitle: 'Adja meg a kártya címét... [Ctrl+Enter] az automatikus megnyitáshoz.',
+      enterCardTitle:
+        'Adja meg a kártya címét... [Ctrl+Enter] az automatikus megnyitáshoz.',
       enterDescription: 'Adja meg a leírást...',
       enterFilename: 'Adja meg a fájl nevét',
       enterListTitle: 'Adja meg a lista címét...',
@@ -153,10 +165,12 @@ export default {
       settings: 'Beállítások',
       sortList_title: 'Rendezés listában',
       stopwatch: 'Stopper',
-      subscribeToMyOwnCardsByDefault: 'Alapértelmezés szerint feliratkozás a saját kártyáimra',
+      subscribeToMyOwnCardsByDefault:
+        'Alapértelmezés szerint feliratkozás a saját kártyáimra',
       taskActions_title: 'Feladat műveletek',
       tasks: 'Feladatok',
-      thereIsNoPreviewAvailableForThisAttachment: 'Nincs elérhető előnézet ehhez a melléklethez.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Nincs elérhető előnézet ehhez a melléklethez.',
       time: 'Idő',
       title: 'Cím',
       userActions_title: 'Felhasználói műveletek',

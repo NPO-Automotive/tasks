@@ -19,7 +19,7 @@
     width: 50px;
 
     &:after {
-      content: "";
+      content: '';
       opacity: 0.4;
     }
 
@@ -29,13 +29,15 @@
   }
 
   .countOpened:after {
-    background: url("data:image/gif;base64,R0lGODlhCwALAJEAAAAAAP///xUVFf///yH5BAEAAAMALAAAAAALAAsAAAIPnI+py+0/hJzz0IruwjsVADs=") no-repeat center right;
+    background: url('data:image/gif;base64,R0lGODlhCwALAJEAAAAAAP///xUVFf///yH5BAEAAAMALAAAAAALAAsAAAIPnI+py+0/hJzz0IruwjsVADs=')
+      no-repeat center right;
     margin-left: 2px;
     padding: 6px 6px 0px;
   }
 
   .countClosed:after {
-    background: url("data:image/gif;base64,R0lGODlhCwALAJEAAAAAAP///xUVFf///yH5BAEAAAMALAAAAAALAAsAAAIRnC2nKLnT4or00Puy3rx7VQAAOw==") no-repeat center right;
+    background: url('data:image/gif;base64,R0lGODlhCwALAJEAAAAAAP///xUVFf///yH5BAEAAAMALAAAAAALAAsAAAIRnC2nKLnT4or00Puy3rx7VQAAOw==')
+      no-repeat center right;
     margin-left: 2px;
     padding: 0 6px 6px;
   }
@@ -61,7 +63,7 @@
     text-overflow: ellipsis;
 
     &:before {
-      content: "–";
+      content: '–';
       position: absolute;
       left: 10px;
     }

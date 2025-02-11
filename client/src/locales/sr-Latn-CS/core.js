@@ -27,17 +27,28 @@ export default {
       all: 'Sve',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Sve promene će automatski biti sačuvane<br />nakon uspostavljanja konekcije.',
-      areYouSureYouWantToDeleteThisAttachment: 'Da li zaista želite da obrišete ovaj prilog?',
-      areYouSureYouWantToDeleteThisBoard: 'Da li zaista želite da obrišete ovu tablu?',
-      areYouSureYouWantToDeleteThisCard: 'Da li zaista želite da obrišete ovu karticu?',
-      areYouSureYouWantToDeleteThisComment: 'Da li zaista želite da obrišete ovaj komentar?',
-      areYouSureYouWantToDeleteThisLabel: 'Da li zaista želite da obrišete ovu oznaku?',
-      areYouSureYouWantToDeleteThisList: 'Da li zaista želite da obrišete ovaj spisak?',
-      areYouSureYouWantToDeleteThisProject: 'Da li zaista želite da obrišete ovaj projekat?',
-      areYouSureYouWantToDeleteThisTask: 'Da li zaista želite da obrišete ovaj zadatak?',
-      areYouSureYouWantToDeleteThisUser: 'Da li zaista želite da obrišete ovog korisnika?',
-      areYouSureYouWantToLeaveBoard: 'Da li zaista želite da napustite ovu tablu?',
-      areYouSureYouWantToLeaveProject: 'Da li zaista želite da napustite ovaj projekat?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Da li zaista želite da obrišete ovaj prilog?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Da li zaista želite da obrišete ovu tablu?',
+      areYouSureYouWantToDeleteThisCard:
+        'Da li zaista želite da obrišete ovu karticu?',
+      areYouSureYouWantToDeleteThisComment:
+        'Da li zaista želite da obrišete ovaj komentar?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Da li zaista želite da obrišete ovu oznaku?',
+      areYouSureYouWantToDeleteThisList:
+        'Da li zaista želite da obrišete ovaj spisak?',
+      areYouSureYouWantToDeleteThisProject:
+        'Da li zaista želite da obrišete ovaj projekat?',
+      areYouSureYouWantToDeleteThisTask:
+        'Da li zaista želite da obrišete ovaj zadatak?',
+      areYouSureYouWantToDeleteThisUser:
+        'Da li zaista želite da obrišete ovog korisnika?',
+      areYouSureYouWantToLeaveBoard:
+        'Da li zaista želite da napustite ovu tablu?',
+      areYouSureYouWantToLeaveProject:
+        'Da li zaista želite da napustite ovaj projekat?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Da li zaista želite da uklonite ovog rukovodioca iz ovog projekta?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -58,7 +69,8 @@ export default {
       copy_inline: 'kopija',
       createBoard_title: 'Napravi tablu',
       createLabel_title: 'Napravi oznaku',
-      createNewOneOrSelectExistingOne: 'Napravi novu ili izaberi<br />postojeću.',
+      createNewOneOrSelectExistingOne:
+        'Napravi novu ili izaberi<br />postojeću.',
       createProject_title: 'Napravi projekat',
       createTextFile_title: 'Napravi tekstualnu datoteku',
       currentPassword: 'Trenutna lozinka',
@@ -92,7 +104,8 @@ export default {
       editUsername_title: 'Izmeni korisničko ime',
       email: 'E-pošta',
       emailAlreadyInUse: 'E-pošta je već u upotrebi',
-      enterCardTitle: 'Unesi naslov kartice... [Ctrl+Enter] da se automatski otvori.',
+      enterCardTitle:
+        'Unesi naslov kartice... [Ctrl+Enter] da se automatski otvori.',
       enterDescription: 'Unesi opis...',
       enterFilename: 'Unesi naziv datoteke',
       enterListTitle: 'Unesi naslov spiska...',
@@ -154,15 +167,19 @@ export default {
       settings: 'Podešavanja',
       sortList_title: 'Složi spisak',
       stopwatch: 'Štoperica',
-      subscribeToMyOwnCardsByDefault: 'Podrazumevano se pretplati na sopstvene kartice',
+      subscribeToMyOwnCardsByDefault:
+        'Podrazumevano se pretplati na sopstvene kartice',
       taskActions_title: 'Radnje nad zadatkom',
       tasks: 'Zadaci',
-      thereIsNoPreviewAvailableForThisAttachment: 'Nema pregleda dostupnog za ovaj prilog.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Nema pregleda dostupnog za ovaj prilog.',
       time: 'Vreme',
       title: 'Naslov',
       userActions_title: 'Korisničke radnje',
-      userAddedThisCardToList: '<0>{{user}}</0><1> je dodao ovu karticu na {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} je ostavio novi komentar «{{comment}}» u <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> je dodao ovu karticu na {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} je ostavio novi komentar «{{comment}}» u <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} je premestio <2>{{card}}</2> sa {{fromList}} u {{toList}}',
       userMovedThisCardFromListToList:

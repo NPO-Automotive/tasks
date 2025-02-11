@@ -27,17 +27,28 @@ export default {
       all: 'Alle',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Alle wijzigingen worden automatisch opgeslagen<br />nadat de verbinding is hersteld.',
-      areYouSureYouWantToDeleteThisAttachment: 'Weet u zeker dat u deze bijlage wilt verwijderen?',
-      areYouSureYouWantToDeleteThisBoard: 'Weet u zeker dat u dit bord wilt verwijderen?',
-      areYouSureYouWantToDeleteThisCard: 'Weet u zeker dat u deze kaart wilt verwijderen?',
-      areYouSureYouWantToDeleteThisComment: 'Weet u zeker dat u deze opmerking wilt verwijderen?',
-      areYouSureYouWantToDeleteThisLabel: 'Weet u zeker dat u dit label wilt verwijderen?',
-      areYouSureYouWantToDeleteThisList: 'Weet u zeker dat u deze lijst wilt verwijderen?',
-      areYouSureYouWantToDeleteThisProject: 'Weet u zeker dat u dit project wilt verwijderen?',
-      areYouSureYouWantToDeleteThisTask: 'Weet u zeker dat u deze taak wilt verwijderen?',
-      areYouSureYouWantToDeleteThisUser: 'Weet u zeker dat u deze gebruiker wilt verwijderen?',
-      areYouSureYouWantToLeaveBoard: 'Weet u zeker dat u het bord wilt verlaten?',
-      areYouSureYouWantToLeaveProject: 'Weet u zeker dat u het project wilt verlaten?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Weet u zeker dat u deze bijlage wilt verwijderen?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Weet u zeker dat u dit bord wilt verwijderen?',
+      areYouSureYouWantToDeleteThisCard:
+        'Weet u zeker dat u deze kaart wilt verwijderen?',
+      areYouSureYouWantToDeleteThisComment:
+        'Weet u zeker dat u deze opmerking wilt verwijderen?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Weet u zeker dat u dit label wilt verwijderen?',
+      areYouSureYouWantToDeleteThisList:
+        'Weet u zeker dat u deze lijst wilt verwijderen?',
+      areYouSureYouWantToDeleteThisProject:
+        'Weet u zeker dat u dit project wilt verwijderen?',
+      areYouSureYouWantToDeleteThisTask:
+        'Weet u zeker dat u deze taak wilt verwijderen?',
+      areYouSureYouWantToDeleteThisUser:
+        'Weet u zeker dat u deze gebruiker wilt verwijderen?',
+      areYouSureYouWantToLeaveBoard:
+        'Weet u zeker dat u het bord wilt verlaten?',
+      areYouSureYouWantToLeaveProject:
+        'Weet u zeker dat u het project wilt verlaten?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Weet u zeker dat u deze manager uit het project wilt verwijderen?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -57,7 +68,8 @@ export default {
       color: 'Kleur',
       createBoard_title: 'Bord aanmaken',
       createLabel_title: 'Label aanmaken',
-      createNewOneOrSelectExistingOne: 'Maak een nieuwe of selecteer een bestaande.',
+      createNewOneOrSelectExistingOne:
+        'Maak een nieuwe of selecteer een bestaande.',
       createProject_title: 'Project aanmaken',
       createTextFile_title: 'Tekstbestand aanmaken',
       currentPassword: 'Huidig wachtwoord',
@@ -90,7 +102,8 @@ export default {
       editUsername_title: 'Gebruikersnaam bewerken',
       email: 'E-mail',
       emailAlreadyInUse: 'E-mail is al in gebruik',
-      enterCardTitle: 'Voer kaarttitel in... [Ctrl+Enter] om automatisch te openen.',
+      enterCardTitle:
+        'Voer kaarttitel in... [Ctrl+Enter] om automatisch te openen.',
       enterDescription: 'Beschrijving invoeren...',
       enterFilename: 'Bestandsnaam invoeren',
       enterListTitle: 'Voer lijsttitel in...',
@@ -145,7 +158,8 @@ export default {
       selectProject: 'Project selecteren',
       settings: 'Instellingen',
       stopwatch: 'Stopwatch',
-      subscribeToMyOwnCardsByDefault: 'Standaard abonneren op mijn eigen kaarten',
+      subscribeToMyOwnCardsByDefault:
+        'Standaard abonneren op mijn eigen kaarten',
       taskActions_title: 'Takenacties',
       tasks: 'Taken',
       thereIsNoPreviewAvailableForThisAttachment:
@@ -153,7 +167,8 @@ export default {
       time: 'Tijd',
       title: 'Titel',
       userActions_title: 'Gebruikersacties',
-      userAddedThisCardToList: '<0>{{user}}</0><1> heeft deze kaart toegevoegd aan {{list}}</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> heeft deze kaart toegevoegd aan {{list}}</1>',
       userLeftNewCommentToCard:
         '{{user}} heeft een nieuwe opmerking achtergelaten «{{comment}}» bij <2>{{card}}</2>',
       userMovedCardFromListToList:

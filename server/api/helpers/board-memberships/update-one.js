@@ -41,7 +41,9 @@ module.exports = {
       }
     }
 
-    const boardMembership = await BoardMembership.updateOne(inputs.record.id).set({ ...values });
+    const boardMembership = await BoardMembership.updateOne(
+      inputs.record.id,
+    ).set({ ...values });
 
     if (boardMembership) {
       sails.sockets.broadcast(

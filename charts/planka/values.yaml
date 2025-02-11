@@ -8,28 +8,28 @@ image:
   repository: ghcr.io/plankanban/planka
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: ''
 
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: ''
+fullnameOverride: ''
 
 # Generate a secret using openssl rand -base64 45
-secretkey: ""
+secretkey: ''
 
 ## @param existingSecretkeySecret Name of an existing secret containing the session key string
 ## NOTE: Must contain key `key`
 ## NOTE: When it's set, the secretkey parameter is ignored
-existingSecretkeySecret: ""
+existingSecretkeySecret: ''
 
 ## @param existingAdminCredsSecret Name of an existing secret containing the admin username and password
 ## NOTE: Must contain keys `username` and `password`
 ## NOTE: When it's set, the `admin_username` and `admin_password` parameters are ignored
-existingAdminCredsSecret: ""
+existingAdminCredsSecret: ''
 
 # Base url for Planka. Will override `ingress.hosts[0].host`
 # Defaults to `http://localhost:3000` if ingress is disabled.
-baseUrl: ""
+baseUrl: ''
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -38,14 +38,16 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  name: ''
 
 podAnnotations: {}
 
-podSecurityContext: {}
+podSecurityContext:
+  {}
   # fsGroup: 2000
 
-securityContext: {}
+securityContext:
+  {}
   # capabilities:
   #   drop:
   #   - ALL
@@ -64,8 +66,9 @@ service:
 
 ingress:
   enabled: false
-  className: ""
-  annotations: {}
+  className: ''
+  annotations:
+    {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
@@ -79,7 +82,8 @@ ingress:
   #    hosts:
   #      - planka.local
 
-resources: {}
+resources:
+  {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
@@ -109,9 +113,9 @@ postgresql:
   auth:
     database: planka
     username: planka
-    password: ""
-    postgresPassword: ""
-    replicationPassword: ""
+    password: ''
+    postgresPassword: ''
+    replicationPassword: ''
     # existingSecret: planka-postgresql
   serviceBindings:
     enabled: true
@@ -123,7 +127,7 @@ dburl:
 ## NOTE: Must contain key `uri`
 ## NOTE: When it's set, the `dburl` parameter is ignored
 ##
-existingDburlSecret: ""
+existingDburlSecret: ''
 
 ## PVC-based data storage configuration
 persistence:
@@ -161,18 +165,18 @@ oidc:
   ##
   ## NOTE: Either specify inline `clientId` and `clientSecret` or refer to them via `existingSecret`
   ##
-  clientId: ""
-  clientSecret: ""
+  clientId: ''
+  clientSecret: ''
 
   ## @param oidc.existingSecret Name of an existing secret containing OIDC credentials
   ## NOTE: Must contain key `clientId` and `clientSecret`
   ## NOTE: When it's set, the `clientId` and `clientSecret` parameters are ignored
   ##
-  existingSecret: ""
+  existingSecret: ''
 
   ## @param oidc.issuerUrl The OpenID connect metadata document endpoint
   ##
-  issuerUrl: ""
+  issuerUrl: ''
 
   ## @param oidc.scopes A list of scopes required for OIDC client.
   ## If empty will default to `openid`, `profile` and `email`
@@ -195,7 +199,8 @@ oidc:
 
     ## @param oidc.admin.roles The names of the admin groups
     ##
-    roles: []
+    roles:
+      []
       # - planka-admin
 
 ## Extra environment variables for planka deployment

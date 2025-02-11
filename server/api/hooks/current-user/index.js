@@ -57,11 +57,20 @@ module.exports = function defineCurrentUserHook(sails) {
           async fn(req, res, next) {
             const { authorization: authorizationHeader } = req.headers;
 
-            if (authorizationHeader && TOKEN_PATTERN.test(authorizationHeader)) {
-              const accessToken = authorizationHeader.replace(TOKEN_PATTERN, '');
+            if (
+              authorizationHeader &&
+              TOKEN_PATTERN.test(authorizationHeader)
+            ) {
+              const accessToken = authorizationHeader.replace(
+                TOKEN_PATTERN,
+                '',
+              );
               const { httpOnlyToken } = req.cookies;
 
-              const sessionAndUser = await getSessionAndUser(accessToken, httpOnlyToken);
+              const sessionAndUser = await getSessionAndUser(
+                accessToken,
+                httpOnlyToken,
+              );
 
               if (sessionAndUser) {
                 const { session, user } = sessionAndUser;
@@ -72,7 +81,10 @@ module.exports = function defineCurrentUserHook(sails) {
                 });
 
                 if (req.isSocket) {
-                  sails.sockets.join(req, `@accessToken:${session.accessToken}`);
+                  sails.sockets.join(
+                    req,
+                    `@accessToken:${session.accessToken}`,
+                  );
                   sails.sockets.join(req, `@user:${user.id}`);
                 }
               }
@@ -86,7 +98,10 @@ module.exports = function defineCurrentUserHook(sails) {
             const { accessToken, httpOnlyToken } = req.cookies;
 
             if (accessToken) {
-              const sessionAndUser = await getSessionAndUser(accessToken, httpOnlyToken);
+              const sessionAndUser = await getSessionAndUser(
+                accessToken,
+                httpOnlyToken,
+              );
 
               if (sessionAndUser) {
                 const { session, user } = sessionAndUser;

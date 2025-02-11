@@ -81,8 +81,13 @@ module.exports = {
       const roles = claims[sails.config.custom.oidcRolesAttribute];
       if (Array.isArray(roles)) {
         // Use a Set here to avoid quadratic time complexity
-        const userRoles = new Set(claims[sails.config.custom.oidcRolesAttribute]);
-        isAdmin = sails.config.custom.oidcAdminRoles.findIndex((role) => userRoles.has(role)) > -1;
+        const userRoles = new Set(
+          claims[sails.config.custom.oidcRolesAttribute],
+        );
+        isAdmin =
+          sails.config.custom.oidcAdminRoles.findIndex((role) =>
+            userRoles.has(role),
+          ) > -1;
       }
     }
 

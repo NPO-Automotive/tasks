@@ -51,7 +51,10 @@ module.exports = {
       ); */
 
       const users = await sails.helpers.users.getMany();
-      const userIds = [inputs.record.id, ...sails.helpers.utils.mapRecords(users)];
+      const userIds = [
+        inputs.record.id,
+        ...sails.helpers.utils.mapRecords(users),
+      ];
 
       userIds.forEach((userId) => {
         sails.sockets.broadcast(

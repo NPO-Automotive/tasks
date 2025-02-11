@@ -48,7 +48,8 @@ module.exports = {
       }
 
       const isPortrait = height > width;
-      const thumbnailsExtension = metadata.format === 'jpeg' ? 'jpg' : metadata.format;
+      const thumbnailsExtension =
+        metadata.format === 'jpeg' ? 'jpg' : metadata.format;
 
       try {
         const resizeBuffer = await image

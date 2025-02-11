@@ -107,12 +107,13 @@ module.exports = {
     }
 
     if (!_.isUndefined(values.position)) {
-      const cards = await sails.helpers.lists.getCards(list.id, inputs.record.id);
-
-      const { position, repositions } = sails.helpers.utils.insertToPositionables(
-        values.position,
-        cards,
+      const cards = await sails.helpers.lists.getCards(
+        list.id,
+        inputs.record.id,
       );
+
+      const { position, repositions } =
+        sails.helpers.utils.insertToPositionables(values.position, cards);
 
       values.position = position;
 
@@ -135,7 +136,9 @@ module.exports = {
       });
     }
 
-    const dueDate = _.isUndefined(values.dueDate) ? inputs.record.dueDate : values.dueDate;
+    const dueDate = _.isUndefined(values.dueDate)
+      ? inputs.record.dueDate
+      : values.dueDate;
 
     if (dueDate) {
       const isDueDateCompleted = _.isUndefined(values.isDueDateCompleted)
@@ -155,7 +158,9 @@ module.exports = {
     } else {
       let prevLabels;
       if (values.board) {
-        const boardMemberUserIds = await sails.helpers.boards.getMemberUserIds(values.board.id);
+        const boardMemberUserIds = await sails.helpers.boards.getMemberUserIds(
+          values.board.id,
+        );
 
         await CardSubscription.destroy({
           cardId: inputs.record.id,
@@ -231,7 +236,8 @@ module.exports = {
           item: card,
         });
 
-        const subscriptionUserIds = await sails.helpers.cards.getSubscriptionUserIds(card.id);
+        const subscriptionUserIds =
+          await sails.helpers.cards.getSubscriptionUserIds(card.id);
 
         subscriptionUserIds.forEach((userId) => {
           sails.sockets.broadcast(`user:${userId}`, 'cardUpdate', {

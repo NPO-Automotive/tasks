@@ -15,7 +15,7 @@
   .colorButtonActive:before {
     bottom: 3px;
     color: #ffffff;
-    content: "Г";
+    content: 'Г';
     font-size: 18px;
     line-height: 36px;
     position: absolute;
@@ -32,7 +32,7 @@
     padding-bottom: 16px;
 
     &:after {
-      content: "";
+      content: '';
       display: table;
       clear: both;
     }

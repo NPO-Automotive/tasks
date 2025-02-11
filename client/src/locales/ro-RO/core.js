@@ -27,17 +27,26 @@ export default {
       all: 'Toate',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Toate modificarile vor fi salvate automat<br />dupa restabilirea conexiunii.',
-      areYouSureYouWantToDeleteThisAttachment: 'Sigur doriți să ștergeți acest atașament?',
-      areYouSureYouWantToDeleteThisBoard: 'Sigur doriți să ștergeți acest panou?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Sigur doriți să ștergeți acest atașament?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Sigur doriți să ștergeți acest panou?',
       areYouSureYouWantToDeleteThisCard: 'Sigur doriți să ștergeți acest card?',
-      areYouSureYouWantToDeleteThisComment: 'Sigur doriți să ștergeți acest comentariu?',
-      areYouSureYouWantToDeleteThisLabel: 'Sigur doriți să ștergeți această etichetă?',
-      areYouSureYouWantToDeleteThisList: 'Sigur doriți să ștergeți această listă?',
-      areYouSureYouWantToDeleteThisProject: 'Sigur doriți să ștergeți acest proiect?',
-      areYouSureYouWantToDeleteThisTask: 'Sigur doriți să ștergeți această sarcină?',
-      areYouSureYouWantToDeleteThisUser: 'Sigur doriți să ștergeți acest utilizator?',
+      areYouSureYouWantToDeleteThisComment:
+        'Sigur doriți să ștergeți acest comentariu?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Sigur doriți să ștergeți această etichetă?',
+      areYouSureYouWantToDeleteThisList:
+        'Sigur doriți să ștergeți această listă?',
+      areYouSureYouWantToDeleteThisProject:
+        'Sigur doriți să ștergeți acest proiect?',
+      areYouSureYouWantToDeleteThisTask:
+        'Sigur doriți să ștergeți această sarcină?',
+      areYouSureYouWantToDeleteThisUser:
+        'Sigur doriți să ștergeți acest utilizator?',
       areYouSureYouWantToLeaveBoard: 'Ești sigur că vrei să părăsești tabla?',
-      areYouSureYouWantToLeaveProject: 'Ești sigur că vrei să părăsești proiectul?',
+      areYouSureYouWantToLeaveProject:
+        'Ești sigur că vrei să părăsești proiectul?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Sigur doriți să eliminați acest manager din proiect?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -57,7 +66,8 @@ export default {
       color: 'Culoarea',
       createBoard_title: 'Creare Tabla',
       createLabel_title: 'Creați etichetă',
-      createNewOneOrSelectExistingOne: 'Crează unu nou sau selectează<br />unu deja existent.',
+      createNewOneOrSelectExistingOne:
+        'Crează unu nou sau selectează<br />unu deja existent.',
       createProject_title: 'Crează Proiect',
       createTextFile_title: 'Crează un Fișier Text',
       currentPassword: 'Parola Curentă',
@@ -90,7 +100,8 @@ export default {
       editUsername_title: 'Editați numele de utilizator',
       email: 'E-mail',
       emailAlreadyInUse: 'E-mail deja utilizat',
-      enterCardTitle: 'Introduceți titlul cardului... [Ctrl+Enter] pentru a se deschide automat.',
+      enterCardTitle:
+        'Introduceți titlul cardului... [Ctrl+Enter] pentru a se deschide automat.',
       enterDescription: 'Introduceți descrierea...',
       enterFilename: 'Introduceți numele fișierului',
       enterListTitle: 'Introduceți titlul listei...',
@@ -145,7 +156,8 @@ export default {
       selectProject: 'Selectați proiectul',
       settings: 'Setări',
       stopwatch: 'Cronometru',
-      subscribeToMyOwnCardsByDefault: 'Abonați-vă la propriile carduri în mod implicit',
+      subscribeToMyOwnCardsByDefault:
+        'Abonați-vă la propriile carduri în mod implicit',
       taskActions_title: 'Acțiuni de sarcină',
       tasks: 'Sarcini',
       thereIsNoPreviewAvailableForThisAttachment:
@@ -153,7 +165,8 @@ export default {
       time: 'Timp',
       title: 'Titlu',
       userActions_title: 'Acțiunile utilizatorului',
-      userAddedThisCardToList: '<0>{{user}}</0><1> a adăugat acest card în {{list}}</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> a adăugat acest card în {{list}}</1>',
       userLeftNewCommentToCard:
         '{{user}} a lăsat un nou comentariu «{{comment}}» în <2>{{card}}</2>',
       userMovedCardFromListToList:

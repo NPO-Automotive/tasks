@@ -7,7 +7,9 @@ const winston = require('winston');
 const defaultLogTimestampFormat = 'YYYY-MM-DD HH:mm:ss';
 
 const logfile =
-  'LOG_FILE' in process.env ? process.env.LOG_FILE : `${process.cwd()}/logs/planka.log`;
+  'LOG_FILE' in process.env
+    ? process.env.LOG_FILE
+    : `${process.cwd()}/logs/planka.log`;
 
 /**
  * Log level for both console and file log sinks.
@@ -20,7 +22,9 @@ const logLevel = 'warn'; // process.env.NODE_ENV === 'production' ? 'info' : 'de
 const logFormat = winston.format.combine(
   winston.format.uncolorize(),
   winston.format.timestamp({ format: defaultLogTimestampFormat }),
-  winston.format.printf((log) => `${log.timestamp} [${log.level[0].toUpperCase()}] ${log.message}`),
+  winston.format.printf(
+    (log) => `${log.timestamp} [${log.level[0].toUpperCase()}] ${log.message}`,
+  ),
 );
 
 // eslint-disable-next-line new-cap

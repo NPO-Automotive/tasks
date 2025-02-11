@@ -37,12 +37,21 @@ const processUserAvatar = async (user, userAvatarsPath) => {
   } catch (error) {} // eslint-disable-line no-empty
 };
 
-const processProjectBackgroundImage = async (project, projectBackgroundImagesPath) => {
-  const rootPath = path.join(projectBackgroundImagesPath, project.background_image.dirname);
+const processProjectBackgroundImage = async (
+  project,
+  projectBackgroundImagesPath,
+) => {
+  const rootPath = path.join(
+    projectBackgroundImagesPath,
+    project.background_image.dirname,
+  );
 
-  let image = sharp(path.join(rootPath, `original.${project.background_image.extension}`), {
-    animated: true,
-  });
+  let image = sharp(
+    path.join(rootPath, `original.${project.background_image.extension}`),
+    {
+      animated: true,
+    },
+  );
 
   let metadata;
   try {
@@ -67,7 +76,9 @@ const processProjectBackgroundImage = async (project, projectBackgroundImagesPat
             }
           : undefined,
       )
-      .toFile(path.join(rootPath, `cover-336.${project.background_image.extension}`));
+      .toFile(
+        path.join(rootPath, `cover-336.${project.background_image.extension}`),
+      );
   } catch (error) {} // eslint-disable-line no-empty
 };
 
@@ -104,7 +115,12 @@ const processAttachmentImage = async (attachment, attachmentsPath) => {
             }
           : undefined,
       )
-      .toFile(path.join(thumbnailsPath, `cover-256.${attachment.image.thumbnailsExtension}`));
+      .toFile(
+        path.join(
+          thumbnailsPath,
+          `cover-256.${attachment.image.thumbnailsExtension}`,
+        ),
+      );
   } catch (error) {} // eslint-disable-line no-empty
 };
 
@@ -123,7 +139,10 @@ module.exports.up = async (knex) => {
   // eslint-disable-next-line no-restricted-syntax
   for (const project of projects) {
     // eslint-disable-next-line no-await-in-loop
-    await processProjectBackgroundImage(project, config.custom.projectBackgroundImagesPath);
+    await processProjectBackgroundImage(
+      project,
+      config.custom.projectBackgroundImagesPath,
+    );
   }
 
   const attachments = await knex('attachment').whereNotNull('image');

@@ -26,15 +26,19 @@ export default {
       all: 'Všetko',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Všetky zmeny budú automaticky uložené<br />po obnovení spojenia.',
-      areYouSureYouWantToDeleteThisAttachment: 'Naozaj chcete zmazať túto prílohu?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Naozaj chcete zmazať túto prílohu?',
       areYouSureYouWantToDeleteThisBoard: 'Naozaj chcete zmazať túto tabuľu?',
       areYouSureYouWantToDeleteThisCard: 'Naozaj chcete zmazať túto kartu?',
-      areYouSureYouWantToDeleteThisComment: 'Naozaj chcete zmazať tento komentár?',
+      areYouSureYouWantToDeleteThisComment:
+        'Naozaj chcete zmazať tento komentár?',
       areYouSureYouWantToDeleteThisLabel: 'Naozaj chcete zmazať tento štítok?',
       areYouSureYouWantToDeleteThisList: 'Naozaj chcete zmazať tento zoznam?',
-      areYouSureYouWantToDeleteThisProject: 'Naozaj chcete zmazať tento projekt?',
+      areYouSureYouWantToDeleteThisProject:
+        'Naozaj chcete zmazať tento projekt?',
       areYouSureYouWantToDeleteThisTask: 'Naozaj chcete zmazať túto úlohu?',
-      areYouSureYouWantToDeleteThisUser: 'Naozaj chcete zmazať tohoto používateľa?',
+      areYouSureYouWantToDeleteThisUser:
+        'Naozaj chcete zmazať tohoto používateľa?',
       areYouSureYouWantToLeaveBoard: 'Naozaj chcete opustiť túto tabuľu?',
       areYouSureYouWantToLeaveProject: 'Naozaj chcete opustiť tento projekt?',
       areYouSureYouWantToRemoveThisManagerFromProject:
@@ -53,7 +57,8 @@ export default {
       color: 'Farba',
       createBoard_title: 'Vytvoriť tabuľu',
       createLabel_title: 'Vytvoriť štítok',
-      createNewOneOrSelectExistingOne: 'Vytvoriť nový alebo vyberte<br />už existujúci.',
+      createNewOneOrSelectExistingOne:
+        'Vytvoriť nový alebo vyberte<br />už existujúci.',
       createProject_title: 'Vytvoriť projekt',
       createTextFile_title: 'Vytvoriť textový súbor',
       currentPassword: 'Aktuálne heslo',
@@ -137,9 +142,12 @@ export default {
       time: 'Čas',
       title: 'Názov',
       userActions_title: 'Akcie na používateľovi',
-      userAddedThisCardToList: '<0>{{user}}</0><1> pridal kartu do {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} zanechal nový komentár «{{comment}}» k <2>{{card}}</2>',
-      userMovedCardFromListToList: '{{user}} presunul <2>{{card}}</2> z {{fromList}} do {{toList}}',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> pridal kartu do {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} zanechal nový komentár «{{comment}}» k <2>{{card}}</2>',
+      userMovedCardFromListToList:
+        '{{user}} presunul <2>{{card}}</2> z {{fromList}} do {{toList}}',
       userMovedThisCardFromListToList:
         '<0>{{user}}</0><1> presunul túto kartu z {{fromList}} do {{toList}}</1>',
       username: 'Používateľské meno',

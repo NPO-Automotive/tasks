@@ -13,9 +13,10 @@ const migrateImage = async (knex, tableName, fieldName, prevFieldName) => {
 
   await knex(tableName)
     .update({
-      [fieldName]: knex.raw('format(\'{"dirname":"%s","extension":"jpg"}\', ??)::jsonb', [
-        prevFieldName,
-      ]),
+      [fieldName]: knex.raw(
+        'format(\'{"dirname":"%s","extension":"jpg"}\', ??)::jsonb',
+        [prevFieldName],
+      ),
     })
     .whereNotNull(prevFieldName);
 
@@ -58,7 +59,8 @@ const processAttachmentImage = async (attachment, attachmentsPath) => {
   }
 
   const { width, pageHeight: height = metadata.height } = metadata;
-  const thumbnailsExtension = metadata.format === 'jpeg' ? 'jpg' : metadata.format;
+  const thumbnailsExtension =
+    metadata.format === 'jpeg' ? 'jpg' : metadata.format;
 
   try {
     await image
@@ -87,7 +89,12 @@ const processAttachmentImage = async (attachment, attachmentsPath) => {
 
 module.exports.up = async (knex) => {
   await migrateImage(knex, 'user_account', 'avatar', 'avatar_dirname');
-  await migrateImage(knex, 'project', 'background_image', 'background_image_dirname');
+  await migrateImage(
+    knex,
+    'project',
+    'background_image',
+    'background_image_dirname',
+  );
 
   const config = await getConfig();
   const attachments = await knex('attachment').whereNotNull('image');
@@ -95,12 +102,17 @@ module.exports.up = async (knex) => {
   // eslint-disable-next-line no-restricted-syntax
   for (const attachment of attachments) {
     // eslint-disable-next-line no-await-in-loop
-    const image = await processAttachmentImage(attachment, config.custom.attachmentsPath);
+    const image = await processAttachmentImage(
+      attachment,
+      config.custom.attachmentsPath,
+    );
 
     // eslint-disable-next-line no-await-in-loop
     await knex('attachment')
       .update({
-        image: image || knex.raw('?? || \'{"thumbnailsExtension":"jpg"}\'', ['image']),
+        image:
+          image ||
+          knex.raw('?? || \'{"thumbnailsExtension":"jpg"}\'', ['image']),
       })
       .where('id', attachment.id);
   }
@@ -108,7 +120,12 @@ module.exports.up = async (knex) => {
 
 module.exports.down = async (knex) => {
   await rollbackImage(knex, 'user_account', 'avatar', 'avatar_dirname');
-  await rollbackImage(knex, 'project', 'background_image', 'background_image_dirname');
+  await rollbackImage(
+    knex,
+    'project',
+    'background_image',
+    'background_image_dirname',
+  );
 
   return knex('attachment')
     .update({

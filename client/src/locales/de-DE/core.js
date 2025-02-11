@@ -28,19 +28,26 @@ export default {
         'Alle Änderungen werden automatisch gespeichert, sobald die Verbindung wiederhergestellt wurde.',
       areYouSureYouWantToDeleteThisAttachment:
         'Sind Sie sicher, dass Sie diesen Anhang löschen möchten?',
-      areYouSureYouWantToDeleteThisBoard: 'Sind Sie sicher, dass Sie dieses Board löschen möchten?',
-      areYouSureYouWantToDeleteThisCard: 'Sind Sie sicher, dass Sie diese Karte löschen möchten?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Sind Sie sicher, dass Sie dieses Board löschen möchten?',
+      areYouSureYouWantToDeleteThisCard:
+        'Sind Sie sicher, dass Sie diese Karte löschen möchten?',
       areYouSureYouWantToDeleteThisComment:
         'Sind Sie sicher, dass Sie diesen Kommentar löschen möchten?',
-      areYouSureYouWantToDeleteThisLabel: 'Sind Sie sicher, dass Sie dieses Label löschen möchten?',
-      areYouSureYouWantToDeleteThisList: 'Sind Sie sicher, dass Sie diese Liste löschen möchten?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Sind Sie sicher, dass Sie dieses Label löschen möchten?',
+      areYouSureYouWantToDeleteThisList:
+        'Sind Sie sicher, dass Sie diese Liste löschen möchten?',
       areYouSureYouWantToDeleteThisProject:
         'Sind Sie sicher, dass Sie dieses Projekt löschen möchten?',
-      areYouSureYouWantToDeleteThisTask: 'Sind Sie sicher, dass Sie diese Aufgabe löschen möchten?',
+      areYouSureYouWantToDeleteThisTask:
+        'Sind Sie sicher, dass Sie diese Aufgabe löschen möchten?',
       areYouSureYouWantToDeleteThisUser:
         'Sind Sie sicher, dass Sie diesen Benutzer löschen möchten?',
-      areYouSureYouWantToLeaveBoard: 'Sind Sie sicher, dass Sie das Board verlassen möchten?',
-      areYouSureYouWantToLeaveProject: 'Sind Sie sicher, dass Sie das Projekt verlassen möchten?',
+      areYouSureYouWantToLeaveBoard:
+        'Sind Sie sicher, dass Sie das Board verlassen möchten?',
+      areYouSureYouWantToLeaveProject:
+        'Sind Sie sicher, dass Sie das Projekt verlassen möchten?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Sind Sie sicher, dass Sie diesen Manager aus dem Projekt entfernen möchten?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -138,14 +145,17 @@ export default {
       selectProject: 'Projekt auswählen',
       settings: 'Einstellungen',
       stopwatch: 'Stoppuhr',
-      subscribeToMyOwnCardsByDefault: 'Standardmäßig meine eigenen Karten abonnieren',
+      subscribeToMyOwnCardsByDefault:
+        'Standardmäßig meine eigenen Karten abonnieren',
       taskActions_title: 'Aufgabenaktionen',
       tasks: 'Aufgaben',
-      thereIsNoPreviewAvailableForThisAttachment: 'Für diesen Anhang ist keine Vorschau verfügbar',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Für diesen Anhang ist keine Vorschau verfügbar',
       time: 'Zeit',
       title: 'Titel',
       userActions_title: 'Benutzeraktionen',
-      userAddedThisCardToList: '<0>{{user}}</0><1> hat diese Karte hinzugefügt zu {{list}}</1>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> hat diese Karte hinzugefügt zu {{list}}</1>',
       userLeftNewCommentToCard:
         '{{user}} hat einen neuen Kommentar verfasst: «{{comment}}» in <2>{{card}}</2>',
       userMovedCardFromListToList:

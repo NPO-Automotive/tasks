@@ -62,7 +62,10 @@ module.exports = {
       throw Errors.NOT_ENOUGH_RIGHTS;
     }
 
-    const isBoardMember = await sails.helpers.users.isBoardMember(inputs.userId, board.id);
+    const isBoardMember = await sails.helpers.users.isBoardMember(
+      inputs.userId,
+      board.id,
+    );
 
     if (!isBoardMember) {
       throw Errors.USER_NOT_FOUND;
@@ -80,7 +83,10 @@ module.exports = {
         actorUser: currentUser,
         request: this.req,
       })
-      .intercept('userAlreadyCardMember', () => Errors.USER_ALREADY_CARD_MEMBER);
+      .intercept(
+        'userAlreadyCardMember',
+        () => Errors.USER_ALREADY_CARD_MEMBER,
+      );
 
     return {
       item: cardMembership,

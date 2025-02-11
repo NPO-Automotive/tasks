@@ -27,12 +27,15 @@ module.exports = {
       };
 
       if (!sails.config.custom.oidcUseDefaultResponseMode) {
-        authorizationUrlParams.response_mode = sails.config.custom.oidcResponseMode;
+        authorizationUrlParams.response_mode =
+          sails.config.custom.oidcResponseMode;
       }
 
       oidc = {
         authorizationUrl: oidcClient.authorizationUrl(authorizationUrlParams),
-        endSessionUrl: oidcClient.issuer.end_session_endpoint ? oidcClient.endSessionUrl({}) : null,
+        endSessionUrl: oidcClient.issuer.end_session_endpoint
+          ? oidcClient.endSessionUrl({})
+          : null,
         isEnforced: sails.config.custom.oidcEnforced,
       };
     }

@@ -23,17 +23,28 @@ export default {
       all: 'All',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'All changes will be automatically saved<br />after connection restored.',
-      areYouSureYouWantToDeleteThisAttachment: 'Are you sure you want to delete this attachment?',
-      areYouSureYouWantToDeleteThisBoard: 'Are you sure you want to delete this board?',
-      areYouSureYouWantToDeleteThisCard: 'Are you sure you want to delete this card?',
-      areYouSureYouWantToDeleteThisComment: 'Are you sure you want to delete this comment?',
-      areYouSureYouWantToDeleteThisLabel: 'Are you sure you want to delete this label?',
-      areYouSureYouWantToDeleteThisList: 'Are you sure you want to delete this list?',
-      areYouSureYouWantToDeleteThisProject: 'Are you sure you want to delete this project?',
-      areYouSureYouWantToDeleteThisTask: 'Are you sure you want to delete this task?',
-      areYouSureYouWantToDeleteThisUser: 'Are you sure you want to delete this user?',
-      areYouSureYouWantToLeaveBoard: 'Are you sure you want to leave the board?',
-      areYouSureYouWantToLeaveProject: 'Are you sure you want to leave the project?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Are you sure you want to delete this attachment?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Are you sure you want to delete this board?',
+      areYouSureYouWantToDeleteThisCard:
+        'Are you sure you want to delete this card?',
+      areYouSureYouWantToDeleteThisComment:
+        'Are you sure you want to delete this comment?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Are you sure you want to delete this label?',
+      areYouSureYouWantToDeleteThisList:
+        'Are you sure you want to delete this list?',
+      areYouSureYouWantToDeleteThisProject:
+        'Are you sure you want to delete this project?',
+      areYouSureYouWantToDeleteThisTask:
+        'Are you sure you want to delete this task?',
+      areYouSureYouWantToDeleteThisUser:
+        'Are you sure you want to delete this user?',
+      areYouSureYouWantToLeaveBoard:
+        'Are you sure you want to leave the board?',
+      areYouSureYouWantToLeaveProject:
+        'Are you sure you want to leave the project?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Are you sure you want to remove this manager from the project?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -54,7 +65,8 @@ export default {
       copy_inline: 'copy',
       createBoard_title: 'Create Board',
       createLabel_title: 'Create Label',
-      createNewOneOrSelectExistingOne: 'Create a new one or select<br />an existing one.',
+      createNewOneOrSelectExistingOne:
+        'Create a new one or select<br />an existing one.',
       createProject_title: 'Create Project',
       createTextFile_title: 'Create Text File',
       currentPassword: 'Current password',
@@ -158,9 +170,12 @@ export default {
       time: 'Time',
       title: 'Title',
       userActions_title: 'User Actions',
-      userAddedThisCardToList: '<0>{{user}}</0><1> added this card to {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} left a new comment «{{comment}}» to <2>{{card}}</2>',
-      userMovedCardFromListToList: '{{user}} moved <2>{{card}}</2> from {{fromList}} to {{toList}}',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> added this card to {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} left a new comment «{{comment}}» to <2>{{card}}</2>',
+      userMovedCardFromListToList:
+        '{{user}} moved <2>{{card}}</2> from {{fromList}} to {{toList}}',
       userMovedThisCardFromListToList:
         '<0>{{user}}</0><1> moved this card from {{fromList}} to {{toList}}</1>',
       username: 'Username',

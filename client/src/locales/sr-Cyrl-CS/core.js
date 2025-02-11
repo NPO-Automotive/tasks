@@ -27,17 +27,28 @@ export default {
       all: 'Све',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Све промене ће аутоматски бити сачуване<br />након успостављања конекције.',
-      areYouSureYouWantToDeleteThisAttachment: 'Да ли заиста желите да обришете овај прилог?',
-      areYouSureYouWantToDeleteThisBoard: 'Да ли заиста желите да обришете ову таблу?',
-      areYouSureYouWantToDeleteThisCard: 'Да ли заиста желите да обришете ову картицу?',
-      areYouSureYouWantToDeleteThisComment: 'Да ли заиста желите да обришете овај коментар?',
-      areYouSureYouWantToDeleteThisLabel: 'Да ли заиста желите да обришете ову ознаку?',
-      areYouSureYouWantToDeleteThisList: 'Да ли заиста желите да обришете овај списак?',
-      areYouSureYouWantToDeleteThisProject: 'Да ли заиста желите да обришете овај пројекат?',
-      areYouSureYouWantToDeleteThisTask: 'Да ли заиста желите да обришете овај задатак?',
-      areYouSureYouWantToDeleteThisUser: 'Да ли заиста желите да обришете овог корисника?',
-      areYouSureYouWantToLeaveBoard: 'Да ли заиста желите да напустите ову таблу?',
-      areYouSureYouWantToLeaveProject: 'Да ли заиста желите да напустите овај пројекат?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Да ли заиста желите да обришете овај прилог?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Да ли заиста желите да обришете ову таблу?',
+      areYouSureYouWantToDeleteThisCard:
+        'Да ли заиста желите да обришете ову картицу?',
+      areYouSureYouWantToDeleteThisComment:
+        'Да ли заиста желите да обришете овај коментар?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Да ли заиста желите да обришете ову ознаку?',
+      areYouSureYouWantToDeleteThisList:
+        'Да ли заиста желите да обришете овај списак?',
+      areYouSureYouWantToDeleteThisProject:
+        'Да ли заиста желите да обришете овај пројекат?',
+      areYouSureYouWantToDeleteThisTask:
+        'Да ли заиста желите да обришете овај задатак?',
+      areYouSureYouWantToDeleteThisUser:
+        'Да ли заиста желите да обришете овог корисника?',
+      areYouSureYouWantToLeaveBoard:
+        'Да ли заиста желите да напустите ову таблу?',
+      areYouSureYouWantToLeaveProject:
+        'Да ли заиста желите да напустите овај пројекат?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Да ли заиста желите да уклоните овог руководиоца из овог пројекта?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -58,7 +69,8 @@ export default {
       copy_inline: 'копија',
       createBoard_title: 'Направи таблу',
       createLabel_title: 'Направи ознаку',
-      createNewOneOrSelectExistingOne: 'Направи нову или изабери<br />постојећу.',
+      createNewOneOrSelectExistingOne:
+        'Направи нову или изабери<br />постојећу.',
       createProject_title: 'Направи пројекат',
       createTextFile_title: 'Направи текстуалну датотеку',
       currentPassword: 'Тренутна лозинка',
@@ -92,7 +104,8 @@ export default {
       editUsername_title: 'Измени корисничко име',
       email: 'Е-пошта',
       emailAlreadyInUse: 'Е-пошта је већ у употреби',
-      enterCardTitle: 'Унеси наслов картице... [Ctrl+Enter] да се аутоматски отвори.',
+      enterCardTitle:
+        'Унеси наслов картице... [Ctrl+Enter] да се аутоматски отвори.',
       enterDescription: 'Унеси опис...',
       enterFilename: 'Унеси назив датотеке',
       enterListTitle: 'Унеси наслов списка...',
@@ -154,15 +167,19 @@ export default {
       settings: 'Подешавања',
       sortList_title: 'Сложи списак',
       stopwatch: 'Штоперица',
-      subscribeToMyOwnCardsByDefault: 'Подразумевано се претплати на сопствене картице',
+      subscribeToMyOwnCardsByDefault:
+        'Подразумевано се претплати на сопствене картице',
       taskActions_title: 'Радње над задатком',
       tasks: 'Задаци',
-      thereIsNoPreviewAvailableForThisAttachment: 'Нема прегледа доступног за овај прилог.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Нема прегледа доступног за овај прилог.',
       time: 'Време',
       title: 'Наслов',
       userActions_title: 'Корисничке радње',
-      userAddedThisCardToList: '<0>{{user}}</0><1> је додао ову картицу на {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} је оставио нови коментар «{{comment}}» у <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> је додао ову картицу на {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} је оставио нови коментар «{{comment}}» у <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} је преместио <2>{{card}}</2> са {{fromList}} у {{toList}}',
       userMovedThisCardFromListToList:

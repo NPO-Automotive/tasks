@@ -42,7 +42,10 @@ const getRepositionsMap = (positions) => {
       break;
     }
 
-    if (!_.isUndefined(nextPosition) && prevPosition + MIN_GAP * 2 <= nextPosition) {
+    if (
+      !_.isUndefined(nextPosition) &&
+      prevPosition + MIN_GAP * 2 <= nextPosition
+    ) {
       (repositionsMap[position] || (repositionsMap[position] = [])).push(
         prevPosition + (nextPosition - prevPosition) / 2,
       );
@@ -56,7 +59,9 @@ const getRepositionsMap = (positions) => {
       return null;
     }
 
-    (repositionsMap[position] || (repositionsMap[position] = [])).push(prevPosition);
+    (repositionsMap[position] || (repositionsMap[position] = [])).push(
+      prevPosition,
+    );
   }
 
   return repositionsMap;
@@ -66,7 +71,9 @@ const getFullRepositionsMap = (positions) => {
   const repositionsMap = {};
 
   _.forEach(positions, (position, index) => {
-    (repositionsMap[position] || (repositionsMap[position] = [])).push(GAP * (index + 1));
+    (repositionsMap[position] || (repositionsMap[position] = [])).push(
+      GAP * (index + 1),
+    );
   });
 
   return repositionsMap;

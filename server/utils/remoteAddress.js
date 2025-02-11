@@ -14,7 +14,8 @@ const getRemoteAddress = (request) => {
   }
 
   // Convert address from IPV6 to IPV4 if client device is IPV4.
-  const defaultIPV6Regex = /^::ffff:((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/g;
+  const defaultIPV6Regex =
+    /^::ffff:((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/g;
   if (remoteAddress.match(defaultIPV6Regex)) {
     remoteAddress = remoteAddress.replace('::ffff:', '');
   }

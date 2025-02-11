@@ -36,7 +36,10 @@ module.exports = {
       userId: currentUser.id,
     });
 
-    const isProjectManager = await sails.helpers.users.isProjectManager(currentUser.id, project.id);
+    const isProjectManager = await sails.helpers.users.isProjectManager(
+      currentUser.id,
+      project.id,
+    );
 
     if (!isProjectManager) {
       if (boardMemberships.length === 0) {
@@ -47,7 +50,9 @@ module.exports = {
       boards = boards.filter((board) => boardIds.includes(board.id));
     }
 
-    const projectManagers = await sails.helpers.projects.getProjectManagers(project.id);
+    const projectManagers = await sails.helpers.projects.getProjectManagers(
+      project.id,
+    );
 
     const userIds = sails.helpers.utils.mapRecords(projectManagers, 'userId');
     const users = await sails.helpers.users.getMany(userIds);

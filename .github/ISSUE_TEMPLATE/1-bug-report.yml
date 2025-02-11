@@ -1,7 +1,7 @@
-name: "🐛 Bug Report"
+name: '🐛 Bug Report'
 description: Report a bug found while using Planka
-title: "[Bug]: "
-labels: ["Type: Bug", "Status: Triage"]
+title: '[Bug]: '
+labels: ['Type: Bug', 'Status: Triage']
 body:
   - type: dropdown
     id: issue-type
@@ -9,8 +9,8 @@ body:
       label: Where is the problem occurring?
       description: Select the part of the application where you encountered the issue.
       options:
-        - "I encountered the problem while using the application (Frontend)"
-        - "I encountered the problem while interacting with the server (Backend)"
+        - 'I encountered the problem while using the application (Frontend)'
+        - 'I encountered the problem while interacting with the server (Backend)'
         - "I'm not sure"
   - type: dropdown
     id: browsers

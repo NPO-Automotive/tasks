@@ -27,15 +27,19 @@ export default {
       all: 'Vše',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Všechny změny budou automaticky uloženy<br />po obnově spojení.',
-      areYouSureYouWantToDeleteThisAttachment: 'Opravdu chcete smazat tuto přílohu?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Opravdu chcete smazat tuto přílohu?',
       areYouSureYouWantToDeleteThisBoard: 'Opravdu chcete smazat tuto tabuli?',
       areYouSureYouWantToDeleteThisCard: 'Opravdu chcete smazat tuto kartu?',
-      areYouSureYouWantToDeleteThisComment: 'Opravdu chcete smazat tento komentář?',
+      areYouSureYouWantToDeleteThisComment:
+        'Opravdu chcete smazat tento komentář?',
       areYouSureYouWantToDeleteThisLabel: 'Opravdu chcete smazat tento štítek?',
       areYouSureYouWantToDeleteThisList: 'Opravdu chcete smazat tento seznam?',
-      areYouSureYouWantToDeleteThisProject: 'Opravdu chcete smazat tento projekt?',
+      areYouSureYouWantToDeleteThisProject:
+        'Opravdu chcete smazat tento projekt?',
       areYouSureYouWantToDeleteThisTask: 'Opravdu chcete smazat tento úkol?',
-      areYouSureYouWantToDeleteThisUser: 'Opravdu chcete smazat tohoto uživatele?',
+      areYouSureYouWantToDeleteThisUser:
+        'Opravdu chcete smazat tohoto uživatele?',
       areYouSureYouWantToLeaveBoard: 'Opravdu chcete opustit tuto tabuli?',
       areYouSureYouWantToLeaveProject: 'Opravdu chcete opustit projekt?',
       areYouSureYouWantToRemoveThisManagerFromProject:
@@ -58,7 +62,8 @@ export default {
       copy_inline: 'copy',
       createBoard_title: 'Vytvořit tabuli',
       createLabel_title: 'Vytvořit štítek',
-      createNewOneOrSelectExistingOne: 'Vytvořit nový nebo vyberte<br />již existující.',
+      createNewOneOrSelectExistingOne:
+        'Vytvořit nový nebo vyberte<br />již existující.',
       createProject_title: 'Vytvořit projekt',
       createTextFile_title: 'Vytvořit textový soubor',
       currentPassword: 'Aktuální heslo',
@@ -151,16 +156,21 @@ export default {
       settings: 'Nastavení',
       sortList_title: 'Řadit podle',
       stopwatch: 'Časovač',
-      subscribeToMyOwnCardsByDefault: 'Ve výchozím nastavení odebírat vlastní karty',
+      subscribeToMyOwnCardsByDefault:
+        'Ve výchozím nastavení odebírat vlastní karty',
       taskActions_title: 'Akce na úkolu',
       tasks: 'Úkoly',
-      thereIsNoPreviewAvailableForThisAttachment: 'Pro tuto přílohu není k dispozici žádný náhled.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Pro tuto přílohu není k dispozici žádný náhled.',
       time: 'Čas',
       title: 'Titulek',
       userActions_title: 'Akce na uživateli',
-      userAddedThisCardToList: '<0>{{user}}</0><1> přidal kartu do {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} zanechal nový komentář «{{comment}}» k <2>{{card}}</2>',
-      userMovedCardFromListToList: '{{user}} přesunul <2>{{card}}</2> z {{fromList}} do {{toList}}',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> přidal kartu do {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} zanechal nový komentář «{{comment}}» k <2>{{card}}</2>',
+      userMovedCardFromListToList:
+        '{{user}} přesunul <2>{{card}}</2> z {{fromList}} do {{toList}}',
       userMovedThisCardFromListToList:
         '<0>{{user}}</0><1> přesunul tuto kartu z {{fromList}} do {{toList}}</1>',
       username: 'Uživatelské jméno',

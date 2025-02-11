@@ -61,7 +61,9 @@ const jsonifyData = (data) => {
   }
 
   if (data.items) {
-    nextData.items = data.items.map((item) => sails.helpers.utils.jsonifyRecord(item));
+    nextData.items = data.items.map((item) =>
+      sails.helpers.utils.jsonifyRecord(item),
+    );
   }
 
   if (data.included) {
@@ -169,7 +171,10 @@ module.exports = {
         return;
       }
 
-      if (webhook.excludedEvents && webhook.excludedEvents.includes(inputs.event)) {
+      if (
+        webhook.excludedEvents &&
+        webhook.excludedEvents.includes(inputs.event)
+      ) {
         return;
       }
 
@@ -177,7 +182,13 @@ module.exports = {
         return;
       }
 
-      sendWebhook(webhook, inputs.event, inputs.data, inputs.prevData, inputs.user);
+      sendWebhook(
+        webhook,
+        inputs.event,
+        inputs.data,
+        inputs.prevData,
+        inputs.user,
+      );
     });
   },
 };

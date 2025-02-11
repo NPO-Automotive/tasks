@@ -25,7 +25,8 @@ export default {
       addUser_title: '添加用户',
       administrator: '管理员',
       all: '全部',
-      allChangesWillBeAutomaticallySavedAfterConnectionRestored: '所有修改会在重连后自动保存',
+      allChangesWillBeAutomaticallySavedAfterConnectionRestored:
+        '所有修改会在重连后自动保存',
       areYouSureYouWantToDeleteThisAttachment: '确认删除此附件吗？',
       areYouSureYouWantToDeleteThisBoard: '确认删除此面板吗？',
       areYouSureYouWantToDeleteThisCard: '确认删除此卡片吗？',
@@ -37,7 +38,8 @@ export default {
       areYouSureYouWantToDeleteThisUser: '确认删除此用户吗？',
       areYouSureYouWantToLeaveBoard: '确认离开此面板吗？',
       areYouSureYouWantToLeaveProject: '确认离开此项目吗？',
-      areYouSureYouWantToRemoveThisManagerFromProject: '确认从本项目删除该管理员吗？',
+      areYouSureYouWantToRemoveThisManagerFromProject:
+        '确认从本项目删除该管理员吗？',
       areYouSureYouWantToRemoveThisMemberFromBoard: '确认本面板删除该成员吗？',
       attachment: '附件',
       attachments: '多个附件',
@@ -149,8 +151,10 @@ export default {
       time: '时间',
       title: '标题',
       userActions_title: '用户操作',
-      userAddedThisCardToList: '<0>{{user}}</0><1> 向列表 {{list}} 添加了该卡片</1>',
-      userLeftNewCommentToCard: '{{user}} 给 {{card}} 添加了一个新评论 «{{comment}}»',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> 向列表 {{list}} 添加了该卡片</1>',
+      userLeftNewCommentToCard:
+        '{{user}} 给 {{card}} 添加了一个新评论 «{{comment}}»',
       userMovedCardFromListToList:
         '{{user}} 将卡片 <2>{{card}}</2> 从 {{fromList}} 移动到 {{toList}}',
       userMovedThisCardFromListToList:

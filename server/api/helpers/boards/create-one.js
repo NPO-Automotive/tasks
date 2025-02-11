@@ -53,7 +53,8 @@ module.exports = {
   async fn(inputs) {
     const { values } = inputs;
 
-    const projectManagerUserIds = await sails.helpers.projects.getManagerUserIds(values.project.id);
+    const projectManagerUserIds =
+      await sails.helpers.projects.getManagerUserIds(values.project.id);
     const boards = await sails.helpers.projects.getBoards(values.project.id);
 
     const { position, repositions } = sails.helpers.utils.insertToPositionables(
@@ -70,8 +71,12 @@ module.exports = {
       });
 
       // TODO: move out of loop
-      const boardMemberUserIds = await sails.helpers.boards.getMemberUserIds(id);
-      const boardRelatedUserIds = _.union(projectManagerUserIds, boardMemberUserIds);
+      const boardMemberUserIds =
+        await sails.helpers.boards.getMemberUserIds(id);
+      const boardRelatedUserIds = _.union(
+        projectManagerUserIds,
+        boardMemberUserIds,
+      );
 
       boardRelatedUserIds.forEach((userId) => {
         sails.sockets.broadcast(`user:${userId}`, 'boardUpdate', {
@@ -92,7 +97,11 @@ module.exports = {
     }).fetch();
 
     if (inputs.import && inputs.import.type === Board.ImportTypes.TRELLO) {
-      await sails.helpers.boards.importFromTrello(board, inputs.import.board, inputs.actorUser);
+      await sails.helpers.boards.importFromTrello(
+        board,
+        inputs.import.board,
+        inputs.actorUser,
+      );
     }
 
     const boardMembership = await BoardMembership.create({

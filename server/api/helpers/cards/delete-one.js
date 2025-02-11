@@ -60,7 +60,11 @@ module.exports = {
       });
 
       if (sails.config.custom.slackBotToken) {
-        buildAndSendMarkdownMessage(card, inputs.actorUser, sails.helpers.utils.sendSlackMessage);
+        buildAndSendMarkdownMessage(
+          card,
+          inputs.actorUser,
+          sails.helpers.utils.sendSlackMessage,
+        );
       }
 
       if (sails.config.custom.googleChatWebhookUrl) {
@@ -72,7 +76,11 @@ module.exports = {
       }
 
       if (sails.config.custom.telegramBotToken) {
-        buildAndSendHtmlMessage(card, inputs.actorUser, sails.helpers.utils.sendTelegramMessage);
+        buildAndSendHtmlMessage(
+          card,
+          inputs.actorUser,
+          sails.helpers.utils.sendTelegramMessage,
+        );
       }
     }
 

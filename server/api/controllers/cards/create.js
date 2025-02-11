@@ -12,7 +12,8 @@ const Errors = {
   },
 };
 
-const dueDateValidator = (value) => moment(value, moment.ISO_8601, true).isValid();
+const dueDateValidator = (value) =>
+  moment(value, moment.ISO_8601, true).isValid();
 
 const stopwatchValidator = (value) => {
   if (!_.isPlainObject(value) || _.size(value) !== 2) {
@@ -120,7 +121,10 @@ module.exports = {
         },
         request: this.req,
       })
-      .intercept('positionMustBeInValues', () => Errors.POSITION_MUST_BE_PRESENT);
+      .intercept(
+        'positionMustBeInValues',
+        () => Errors.POSITION_MUST_BE_PRESENT,
+      );
 
     return {
       item: card,

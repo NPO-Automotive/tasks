@@ -68,16 +68,16 @@ helm install planka . --set secretkey=$SECRETKEY \
 
 or create a values.yaml file like:
 
-```yaml
-secretkey: "<InsertSecretKey>"
+````yaml
+secretkey: '<InsertSecretKey>'
 # The admin section needs to be present for new instances of Planka, after the first start you can remove the lines starting with admin_. If you want the admin user to be unchangeable admin_email: has to stay
 # After changing the config you have to run ```helm upgrade  planka . -f values.yaml```
 
 # Admin user
-admin_email: "demo@demo.demo" # Do not remove if you want to prevent this user from being edited/deleted
-admin_password: "demo"
-admin_name: "Demo Demo"
-admin_username: "demo"
+admin_email: 'demo@demo.demo' # Do not remove if you want to prevent this user from being edited/deleted
+admin_password: 'demo'
+admin_name: 'Demo Demo'
+admin_username: 'demo'
 # Admin user
 
 # Ingress
@@ -89,12 +89,12 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
 
-# Needed for HTTPS
+  # Needed for HTTPS
   tls:
-   - secretName: planka-tls # existing TLS secret in k8s
-     hosts:
-       - planka.example.dev
-```
+    - secretName: planka-tls # existing TLS secret in k8s
+      hosts:
+        - planka.example.dev
+````
 
 ```bash
 helm install planka . -f values.yaml

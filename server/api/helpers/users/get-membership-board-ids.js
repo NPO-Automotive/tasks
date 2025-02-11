@@ -1,4 +1,5 @@
-const idOrIdsValidator = (value) => _.isString(value) || _.every(value, _.isString);
+const idOrIdsValidator = (value) =>
+  _.isString(value) || _.every(value, _.isString);
 
 module.exports = {
   inputs: {
@@ -10,8 +11,14 @@ module.exports = {
   },
 
   async fn(inputs) {
-    const boardMemberships = await sails.helpers.users.getBoardMemberships(inputs.idOrIds);
+    const boardMemberships = await sails.helpers.users.getBoardMemberships(
+      inputs.idOrIds,
+    );
 
-    return sails.helpers.utils.mapRecords(boardMemberships, 'boardId', _.isArray(inputs.idOrIds));
+    return sails.helpers.utils.mapRecords(
+      boardMemberships,
+      'boardId',
+      _.isArray(inputs.idOrIds),
+    );
   },
 };

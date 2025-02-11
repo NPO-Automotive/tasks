@@ -72,7 +72,10 @@ module.exports = {
         throw Errors.NOT_ENOUGH_RIGHTS;
       }
     } else if (inputs.id === currentUser.id) {
-      if (!inputs.currentPassword || !bcrypt.compareSync(inputs.currentPassword, user.password)) {
+      if (
+        !inputs.currentPassword ||
+        !bcrypt.compareSync(inputs.currentPassword, user.password)
+      ) {
         throw Errors.INVALID_CURRENT_PASSWORD;
       }
     }

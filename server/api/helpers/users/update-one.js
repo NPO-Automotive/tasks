@@ -120,14 +120,22 @@ module.exports = {
           inputs.request,
         );
 
-        if (user.id === inputs.actorUser.id && inputs.request && inputs.request.isSocket) {
+        if (
+          user.id === inputs.actorUser.id &&
+          inputs.request &&
+          inputs.request.isSocket
+        ) {
           const tempRoom = uuid();
 
-          sails.sockets.addRoomMembersToRooms(`@user:${user.id}`, tempRoom, () => {
-            sails.sockets.leave(inputs.request, tempRoom, () => {
-              sails.sockets.leaveAll(tempRoom);
-            });
-          });
+          sails.sockets.addRoomMembersToRooms(
+            `@user:${user.id}`,
+            tempRoom,
+            () => {
+              sails.sockets.leave(inputs.request, tempRoom, () => {
+                sails.sockets.leaveAll(tempRoom);
+              });
+            },
+          );
         } else {
           sails.sockets.leaveAll(`@user:${user.id}`);
         }

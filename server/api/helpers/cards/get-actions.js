@@ -1,6 +1,7 @@
 const LIMIT = 50;
 
-const idOrIdsValidator = (value) => _.isString(value) || _.every(value, _.isString);
+const idOrIdsValidator = (value) =>
+  _.isString(value) || _.every(value, _.isString);
 
 module.exports = {
   inputs: {

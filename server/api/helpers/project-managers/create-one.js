@@ -44,9 +44,10 @@ module.exports = {
       .intercept('E_UNIQUE', 'userAlreadyProjectManager')
       .fetch();
 
-    const projectRelatedUserIds = await sails.helpers.projects.getManagerAndBoardMemberUserIds(
-      projectManager.projectId,
-    );
+    const projectRelatedUserIds =
+      await sails.helpers.projects.getManagerAndBoardMemberUserIds(
+        projectManager.projectId,
+      );
 
     projectRelatedUserIds.forEach((userId) => {
       sails.sockets.broadcast(

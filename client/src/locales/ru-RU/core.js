@@ -27,17 +27,28 @@ export default {
       all: 'Все',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Все изменения сохранятся автоматически,<br />как только подключение восстановится.',
-      areYouSureYouWantToDeleteThisAttachment: 'Вы уверены, что хотите удалить это вложение?',
-      areYouSureYouWantToDeleteThisBoard: 'Вы уверены, что хотите удалить эту доску?',
-      areYouSureYouWantToDeleteThisCard: 'Вы уверены, что хотите удалить эту карточку?',
-      areYouSureYouWantToDeleteThisComment: 'Вы уверены, что хотите удалить этот комментарий?',
-      areYouSureYouWantToDeleteThisLabel: 'Вы уверены, что хотите удалить эту метку?',
-      areYouSureYouWantToDeleteThisList: 'Вы уверены, что хотите удалить этот список?',
-      areYouSureYouWantToDeleteThisProject: 'Вы уверены, что хотите удалить этот проект?',
-      areYouSureYouWantToDeleteThisTask: 'Вы уверены, что хотите удалить эту задачу?',
-      areYouSureYouWantToDeleteThisUser: 'Вы уверены, что хотите удалить этого пользователя?',
-      areYouSureYouWantToLeaveBoard: 'Вы уверены, что хотите покинуть эту доску?',
-      areYouSureYouWantToLeaveProject: 'Вы уверены, что хотите покинуть этот проект?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Вы уверены, что хотите удалить это вложение?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Вы уверены, что хотите удалить эту доску?',
+      areYouSureYouWantToDeleteThisCard:
+        'Вы уверены, что хотите удалить эту карточку?',
+      areYouSureYouWantToDeleteThisComment:
+        'Вы уверены, что хотите удалить этот комментарий?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Вы уверены, что хотите удалить эту метку?',
+      areYouSureYouWantToDeleteThisList:
+        'Вы уверены, что хотите удалить этот список?',
+      areYouSureYouWantToDeleteThisProject:
+        'Вы уверены, что хотите удалить этот проект?',
+      areYouSureYouWantToDeleteThisTask:
+        'Вы уверены, что хотите удалить эту задачу?',
+      areYouSureYouWantToDeleteThisUser:
+        'Вы уверены, что хотите удалить этого пользователя?',
+      areYouSureYouWantToLeaveBoard:
+        'Вы уверены, что хотите покинуть эту доску?',
+      areYouSureYouWantToLeaveProject:
+        'Вы уверены, что хотите покинуть этот проект?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Вы уверены, что хотите удалить этого менеджера из проекта?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -58,7 +69,8 @@ export default {
       copy_inline: 'копировать',
       createBoard: 'Создание доски',
       createLabel: 'Создание метки',
-      createNewOneOrSelectExistingOne: 'Создайте новую или выберите<br />уже существующую.',
+      createNewOneOrSelectExistingOne:
+        'Создайте новую или выберите<br />уже существующую.',
       createProject: 'Создание проекта',
       createTextFile: 'Создание текстового файла',
       currentPassword: 'Текущий пароль',
@@ -93,7 +105,8 @@ export default {
       editUsername_title: 'Изменение имени пользователя',
       email: 'E-mail',
       emailAlreadyInUse: 'E-mail уже занят',
-      enterCardTitle: 'Введите заголовок для этой карточки...  [Ctrl+Enter] для применения',
+      enterCardTitle:
+        'Введите заголовок для этой карточки...  [Ctrl+Enter] для применения',
       enterDescription: 'Введите описание...',
       enterFilename: 'Введите название файла',
       enterListTitle: 'Введите заголовок списка...',
@@ -155,15 +168,19 @@ export default {
       settings: 'Настройки',
       sortList_title: 'Сортировка списка',
       stopwatch: 'Секундомер',
-      subscribeToMyOwnCardsByDefault: 'По умолчанию подписываться на мои собственные карточки',
+      subscribeToMyOwnCardsByDefault:
+        'По умолчанию подписываться на мои собственные карточки',
       taskActions_title: 'Действия по задаче',
       tasks: 'Задачи',
-      thereIsNoPreviewAvailableForThisAttachment: 'Предпросмотр для этого вложения недоступен.',
+      thereIsNoPreviewAvailableForThisAttachment:
+        'Предпросмотр для этого вложения недоступен.',
       time: 'Время',
       title: 'Название',
       userActions_title: 'Действия с пользователем',
-      userAddedThisCardToList: '<0>{{user}}</0><1> добавил(а) эту карточку в {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} оставил(а) комментарий «{{comment}}» к <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> добавил(а) эту карточку в {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} оставил(а) комментарий «{{comment}}» к <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} переместил(а) <2>{{card}}</2> из {{fromList}} в {{toList}}',
       userMovedThisCardFromListToList:

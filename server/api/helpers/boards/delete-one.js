@@ -25,11 +25,21 @@ module.exports = {
     const board = await Board.archiveOne(inputs.record.id);
 
     if (board) {
-      sails.sockets.removeRoomMembersFromRooms(`board:${board.id}`, `board:${board.id}`);
+      sails.sockets.removeRoomMembersFromRooms(
+        `board:${board.id}`,
+        `board:${board.id}`,
+      );
 
-      const projectManagerUserIds = await sails.helpers.projects.getManagerUserIds(board.projectId);
-      const boardMemberUserIds = sails.helpers.utils.mapRecords(boardMemberships, 'userId');
-      const boardRelatedUserIds = _.union(projectManagerUserIds, boardMemberUserIds);
+      const projectManagerUserIds =
+        await sails.helpers.projects.getManagerUserIds(board.projectId);
+      const boardMemberUserIds = sails.helpers.utils.mapRecords(
+        boardMemberships,
+        'userId',
+      );
+      const boardRelatedUserIds = _.union(
+        projectManagerUserIds,
+        boardMemberUserIds,
+      );
 
       boardRelatedUserIds.forEach((userId) => {
         sails.sockets.broadcast(

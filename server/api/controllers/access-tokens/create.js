@@ -22,7 +22,9 @@ const Errors = {
 const emailOrUsernameValidator = (value) =>
   value.includes('@')
     ? validator.isEmail(value)
-    : value.length >= 3 && value.length <= 16 && /^[a-zA-Z0-9]+((_|\.)?[a-zA-Z0-9])*$/.test(value);
+    : value.length >= 3 &&
+      value.length <= 16 &&
+      /^[a-zA-Z0-9]+((_|\.)?[a-zA-Z0-9])*$/.test(value);
 
 module.exports = {
   inputs: {
@@ -62,7 +64,9 @@ module.exports = {
     }
 
     const remoteAddress = getRemoteAddress(this.req);
-    const user = await sails.helpers.users.getOneByEmailOrUsername(inputs.emailOrUsername);
+    const user = await sails.helpers.users.getOneByEmailOrUsername(
+      inputs.emailOrUsername,
+    );
 
     if (!user) {
       sails.log.warn(
@@ -86,9 +90,8 @@ module.exports = {
         : Errors.INVALID_CREDENTIALS;
     }
 
-    const { token: accessToken, payload: accessTokenPayload } = sails.helpers.utils.createJwtToken(
-      user.id,
-    );
+    const { token: accessToken, payload: accessTokenPayload } =
+      sails.helpers.utils.createJwtToken(user.id);
 
     const httpOnlyToken = inputs.withHttpOnlyToken ? uuid() : null;
 
@@ -101,7 +104,11 @@ module.exports = {
     });
 
     if (httpOnlyToken && !this.req.isSocket) {
-      sails.helpers.utils.setHttpOnlyTokenCookie(httpOnlyToken, accessTokenPayload, this.res);
+      sails.helpers.utils.setHttpOnlyTokenCookie(
+        httpOnlyToken,
+        accessTokenPayload,
+        this.res,
+      );
     }
 
     return {

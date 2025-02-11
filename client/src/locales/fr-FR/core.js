@@ -27,17 +27,28 @@ export default {
       all: 'Tout',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Toutes les modifications seront automatiquement enregistrées<br />une fois la connexion rétablie.',
-      areYouSureYouWantToDeleteThisAttachment: 'Voulez-vous vraiment supprimer cette pièce jointe?',
-      areYouSureYouWantToDeleteThisBoard: 'Êtes-vous sûr de vouloir supprimer ce tableau?',
-      areYouSureYouWantToDeleteThisCard: 'Voulez-vous vraiment supprimer cette carte?',
-      areYouSureYouWantToDeleteThisComment: 'Êtes-vous sûr de vouloir supprimer ce commentaire?',
-      areYouSureYouWantToDeleteThisLabel: 'Voulez-vous vraiment supprimer cette étiquette?',
-      areYouSureYouWantToDeleteThisList: 'Êtes-vous sûr de vouloir supprimer cette liste?',
-      areYouSureYouWantToDeleteThisProject: 'Êtes-vous sûr de vouloir supprimer ce projet?',
-      areYouSureYouWantToDeleteThisTask: 'Êtes-vous sûr de vouloir supprimer cette tâche?',
-      areYouSureYouWantToDeleteThisUser: 'Êtes-vous sûr de vouloir supprimer cet utilisateur?',
-      areYouSureYouWantToLeaveBoard: 'Êtes-vous sûr de vouloir quitter ce tableau ?',
-      areYouSureYouWantToLeaveProject: 'Êtes-vous sûr de vouloir quitter ce projet ?',
+      areYouSureYouWantToDeleteThisAttachment:
+        'Voulez-vous vraiment supprimer cette pièce jointe?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Êtes-vous sûr de vouloir supprimer ce tableau?',
+      areYouSureYouWantToDeleteThisCard:
+        'Voulez-vous vraiment supprimer cette carte?',
+      areYouSureYouWantToDeleteThisComment:
+        'Êtes-vous sûr de vouloir supprimer ce commentaire?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Voulez-vous vraiment supprimer cette étiquette?',
+      areYouSureYouWantToDeleteThisList:
+        'Êtes-vous sûr de vouloir supprimer cette liste?',
+      areYouSureYouWantToDeleteThisProject:
+        'Êtes-vous sûr de vouloir supprimer ce projet?',
+      areYouSureYouWantToDeleteThisTask:
+        'Êtes-vous sûr de vouloir supprimer cette tâche?',
+      areYouSureYouWantToDeleteThisUser:
+        'Êtes-vous sûr de vouloir supprimer cet utilisateur?',
+      areYouSureYouWantToLeaveBoard:
+        'Êtes-vous sûr de vouloir quitter ce tableau ?',
+      areYouSureYouWantToLeaveProject:
+        'Êtes-vous sûr de vouloir quitter ce projet ?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Êtes-vous sûr de vouloir supprimer ce manager du projet ?',
       areYouSureYouWantToRemoveThisMemberFromProject:
@@ -58,7 +69,8 @@ export default {
       copy_inline: 'copie',
       createBoard_title: 'Créer un tableau',
       createLabel_title: 'Créer une étiquette',
-      createNewOneOrSelectExistingOne: 'Créez-en un nouveau ou sélectionnez<br />un existant.',
+      createNewOneOrSelectExistingOne:
+        'Créez-en un nouveau ou sélectionnez<br />un existant.',
       createProject_title: 'Créer un projet',
       createTextFile_title: 'Créer un fichier texte',
       currentPassword: 'Mot de passe actuel',
@@ -92,7 +104,8 @@ export default {
       editUsername_title: "Modifier le nom d'utilisateur",
       email: 'E-mail',
       emailAlreadyInUse: 'Email déjà utilisé',
-      enterCardTitle: 'Saisir le titre de la carte... [Ctrl+Enter] pour ouvrir automatiquement',
+      enterCardTitle:
+        'Saisir le titre de la carte... [Ctrl+Enter] pour ouvrir automatiquement',
       enterDescription: 'Saisir la description...',
       enterFilename: 'Saisir le nom du fichier',
       enterListTitle: 'Saisie le titre de la liste...',
@@ -154,7 +167,8 @@ export default {
       settings: 'Réglages',
       sortList_title: 'Trier la liste',
       stopwatch: 'Minuteur',
-      subscribeToMyOwnCardsByDefault: 'Abonnez-vous à mes propres cartes par défaut',
+      subscribeToMyOwnCardsByDefault:
+        'Abonnez-vous à mes propres cartes par défaut',
       taskActions_title: 'Actions de tâche',
       tasks: 'Tâches',
       thereIsNoPreviewAvailableForThisAttachment:
@@ -162,7 +176,8 @@ export default {
       time: 'Temps',
       title: 'Titre',
       userActions_title: "Actions de l'utilisateur",
-      userAddedThisCardToList: '<0> {{user}} </0> <1> a ajouté cette carte à {{list}} </1>',
+      userAddedThisCardToList:
+        '<0> {{user}} </0> <1> a ajouté cette carte à {{list}} </1>',
       userLeftNewCommentToCard:
         '{{user}} a laissé un nouveau commentaire {{comment}} à <2> {{card}} </2>',
       userMovedCardFromListToList:
@@ -241,7 +256,8 @@ export default {
       removeManager: 'Supprimer le manager',
       removeMember: 'Supprimer le membre',
       save: 'Sauvegarder',
-      showAllAttachments: 'Afficher toutes les pièces jointes ({{hidden}} masquées)',
+      showAllAttachments:
+        'Afficher toutes les pièces jointes ({{hidden}} masquées)',
       showDetails: 'Afficher les détails',
       showFewerAttachments: 'Afficher moins de pièces jointes',
       sortList_title: 'Trier la liste',

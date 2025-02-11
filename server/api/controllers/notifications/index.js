@@ -2,7 +2,9 @@ module.exports = {
   async fn() {
     const { currentUser } = this.req;
 
-    const notifications = await sails.helpers.users.getNotifications(currentUser.id);
+    const notifications = await sails.helpers.users.getNotifications(
+      currentUser.id,
+    );
 
     const actionIds = sails.helpers.utils.mapRecords(notifications, 'actionId');
     const actions = await sails.helpers.actions.getMany(actionIds);

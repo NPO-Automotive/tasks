@@ -26,11 +26,14 @@ module.exports = {
 
     let response;
     try {
-      response = await fetch(buildSendMessageApiUrl(sails.config.custom.telegramBotToken), {
-        headers,
-        method: 'POST',
-        body: JSON.stringify(body),
-      });
+      response = await fetch(
+        buildSendMessageApiUrl(sails.config.custom.telegramBotToken),
+        {
+          headers,
+          method: 'POST',
+          body: JSON.stringify(body),
+        },
+      );
     } catch (error) {
       sails.log.error(`Error sending to Telegram: ${error}`);
       return;

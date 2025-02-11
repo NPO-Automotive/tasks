@@ -50,12 +50,13 @@ module.exports = {
     const { values } = inputs;
 
     if (!_.isUndefined(values.position)) {
-      const tasks = await sails.helpers.cards.getTasks(inputs.record.cardId, inputs.record.id);
-
-      const { position, repositions } = sails.helpers.utils.insertToPositionables(
-        values.position,
-        tasks,
+      const tasks = await sails.helpers.cards.getTasks(
+        inputs.record.cardId,
+        inputs.record.id,
       );
+
+      const { position, repositions } =
+        sails.helpers.utils.insertToPositionables(values.position, tasks);
 
       values.position = position;
 

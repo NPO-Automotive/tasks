@@ -35,14 +35,17 @@ Then('the user should be in dashboard page', async function () {
   await expect(page).toHaveURL(loginPage.homeUrl);
 });
 
-Then('user should see the error message {string}', async function (errorMessage) {
-  const actualErrorMessage = await loginPage.getErrorMessage();
-  assert.equal(
-    actualErrorMessage,
-    errorMessage,
-    `Expected message to be "${errorMessage}" but receive "${actualErrorMessage}"`,
-  );
-});
+Then(
+  'user should see the error message {string}',
+  async function (errorMessage) {
+    const actualErrorMessage = await loginPage.getErrorMessage();
+    assert.equal(
+      actualErrorMessage,
+      errorMessage,
+      `Expected message to be "${errorMessage}" but receive "${actualErrorMessage}"`,
+    );
+  },
+);
 
 When('user logs out using the webUI', async function () {
   await loginPage.logOut();

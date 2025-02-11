@@ -25,7 +25,8 @@ export default {
       addUser_title: '添加使用者',
       administrator: '管理員',
       all: '全部',
-      allChangesWillBeAutomaticallySavedAfterConnectionRestored: '所有修改會在重新連線後自動保存',
+      allChangesWillBeAutomaticallySavedAfterConnectionRestored:
+        '所有修改會在重新連線後自動保存',
       areYouSureYouWantToDeleteThisAttachment: '確認刪除此附件嗎？',
       areYouSureYouWantToDeleteThisBoard: '確認刪除此看板嗎？',
       areYouSureYouWantToDeleteThisCard: '確認刪除此卡片嗎？',
@@ -37,8 +38,10 @@ export default {
       areYouSureYouWantToDeleteThisUser: '確認刪除此使用者嗎？',
       areYouSureYouWantToLeaveBoard: '確認離開此看板嗎？',
       areYouSureYouWantToLeaveProject: '確認離開此專案嗎？',
-      areYouSureYouWantToRemoveThisManagerFromProject: '確認從此專案中刪除該管理員嗎？',
-      areYouSureYouWantToRemoveThisMemberFromBoard: '確認從此看板中刪除該成員嗎？',
+      areYouSureYouWantToRemoveThisManagerFromProject:
+        '確認從此專案中刪除該管理員嗎？',
+      areYouSureYouWantToRemoveThisMemberFromBoard:
+        '確認從此看板中刪除該成員嗎？',
       attachment: '附件',
       attachments: '附件',
       authentication: '驗證',
@@ -149,8 +152,10 @@ export default {
       time: '時間',
       title: '標題',
       userActions_title: '使用者操作',
-      userAddedThisCardToList: '<0>{{user}}</0><1> 向列表 {{list}} 添加了該卡片</1>',
-      userLeftNewCommentToCard: '{{user}} 給 {{card}} 添加了一條新評論 「{{comment}}」',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> 向列表 {{list}} 添加了該卡片</1>',
+      userLeftNewCommentToCard:
+        '{{user}} 給 {{card}} 添加了一條新評論 「{{comment}}」',
       userMovedCardFromListToList:
         '{{user}} 將卡片 <2>{{card}}</2> 從 {{fromList}} 移動到 {{toList}}',
       userMovedThisCardFromListToList:

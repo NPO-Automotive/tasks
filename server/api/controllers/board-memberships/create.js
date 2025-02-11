@@ -52,7 +52,10 @@ module.exports = {
       .getProjectPath(inputs.boardId)
       .intercept('pathNotFound', () => Errors.BOARD_NOT_FOUND);
 
-    const isProjectManager = await sails.helpers.users.isProjectManager(currentUser.id, project.id);
+    const isProjectManager = await sails.helpers.users.isProjectManager(
+      currentUser.id,
+      project.id,
+    );
 
     if (!isProjectManager) {
       throw Errors.BOARD_NOT_FOUND; // Forbidden
@@ -77,7 +80,10 @@ module.exports = {
         actorUser: currentUser,
         request: this.req,
       })
-      .intercept('userAlreadyBoardMember', () => Errors.USER_ALREADY_BOARD_MEMBER);
+      .intercept(
+        'userAlreadyBoardMember',
+        () => Errors.USER_ALREADY_BOARD_MEMBER,
+      );
 
     return {
       item: boardMembership,

@@ -42,12 +42,13 @@ module.exports = {
     const { values } = inputs;
 
     if (!_.isUndefined(values.position)) {
-      const lists = await sails.helpers.boards.getLists(inputs.record.boardId, inputs.record.id);
-
-      const { position, repositions } = sails.helpers.utils.insertToPositionables(
-        values.position,
-        lists,
+      const lists = await sails.helpers.boards.getLists(
+        inputs.record.boardId,
+        inputs.record.id,
       );
+
+      const { position, repositions } =
+        sails.helpers.utils.insertToPositionables(values.position, lists);
 
       values.position = position;
 
@@ -59,12 +60,16 @@ module.exports = {
           position: nextPosition,
         });
 
-        sails.sockets.broadcast(`board:${inputs.record.boardId}`, 'listUpdate', {
-          item: {
-            id,
-            position: nextPosition,
+        sails.sockets.broadcast(
+          `board:${inputs.record.boardId}`,
+          'listUpdate',
+          {
+            item: {
+              id,
+              position: nextPosition,
+            },
           },
-        });
+        );
 
         // TODO: send webhooks
       });

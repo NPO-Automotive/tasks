@@ -28,17 +28,25 @@ export default {
         'Alla ändringar kommer att sparas automatiskt<br />så fort anslutningen är återställd.',
       areYouSureYouWantToDeleteThisAttachment:
         'Är du säker på att du vill ta bort den här bilagan?',
-      areYouSureYouWantToDeleteThisBoard: 'Är du säker på att du vill ta bort den här tavlan?',
-      areYouSureYouWantToDeleteThisCard: 'Är du säker på att du vill ta bort det här kortet?',
+      areYouSureYouWantToDeleteThisBoard:
+        'Är du säker på att du vill ta bort den här tavlan?',
+      areYouSureYouWantToDeleteThisCard:
+        'Är du säker på att du vill ta bort det här kortet?',
       areYouSureYouWantToDeleteThisComment:
         'Är du säker på att du vill ta bort den här kommentaren?',
-      areYouSureYouWantToDeleteThisLabel: 'Är du säker på att du vill ta bort den här etiketten?',
-      areYouSureYouWantToDeleteThisList: 'Är du säker på att du vill ta bort den här listan?',
-      areYouSureYouWantToDeleteThisProject: 'Är du säker på att du vill ta bort det här projektet?',
-      areYouSureYouWantToDeleteThisTask: 'Är du säker på att du vill ta bort den här uppgiften?',
-      areYouSureYouWantToDeleteThisUser: 'Är du säker på att du vill ta bort den här användaren?',
+      areYouSureYouWantToDeleteThisLabel:
+        'Är du säker på att du vill ta bort den här etiketten?',
+      areYouSureYouWantToDeleteThisList:
+        'Är du säker på att du vill ta bort den här listan?',
+      areYouSureYouWantToDeleteThisProject:
+        'Är du säker på att du vill ta bort det här projektet?',
+      areYouSureYouWantToDeleteThisTask:
+        'Är du säker på att du vill ta bort den här uppgiften?',
+      areYouSureYouWantToDeleteThisUser:
+        'Är du säker på att du vill ta bort den här användaren?',
       areYouSureYouWantToLeaveBoard: 'Är du säker på att du vill lämna tavlan?',
-      areYouSureYouWantToLeaveProject: 'Är du säker på att du vill lämna projektet?',
+      areYouSureYouWantToLeaveProject:
+        'Är du säker på att du vill lämna projektet?',
       areYouSureYouWantToRemoveThisManagerFromProject:
         'Är du säker på att du vill ta bort den här projektledaren från projektet?',
       areYouSureYouWantToRemoveThisMemberFromBoard:
@@ -55,7 +63,8 @@ export default {
       color: 'Färg',
       createBoard_title: 'Skapa Tavla',
       createLabel_title: 'Skapa Etikett',
-      createNewOneOrSelectExistingOne: 'Skapa en ny eller välj<br />en redan existerande.',
+      createNewOneOrSelectExistingOne:
+        'Skapa en ny eller välj<br />en redan existerande.',
       createProject_title: 'Skapa Projekt',
       createTextFile_title: 'Skapa Textfil',
       currentPassword: 'Nuvarande lösenord',
@@ -132,14 +141,17 @@ export default {
       selectProject: 'Välj projekt',
       settings: 'Inställningar',
       stopwatch: 'Timer',
-      subscribeToMyOwnCardsByDefault: 'Prenumerera på mina egna kort som standard',
+      subscribeToMyOwnCardsByDefault:
+        'Prenumerera på mina egna kort som standard',
       taskActions_title: 'Uppgiftsåtgärder',
       tasks: 'Uppgifter',
       time: 'Tid',
       title: 'Titel',
       userActions_title: 'Användaråtgärder',
-      userAddedThisCardToList: '<0>{{user}}</0><1> lade till detta kort i {{list}}</1>',
-      userLeftNewCommentToCard: '{{user}} lämnade en ny kommentar «{{comment}}» på <2>{{card}}</2>',
+      userAddedThisCardToList:
+        '<0>{{user}}</0><1> lade till detta kort i {{list}}</1>',
+      userLeftNewCommentToCard:
+        '{{user}} lämnade en ny kommentar «{{comment}}» på <2>{{card}}</2>',
       userMovedCardFromListToList:
         '{{user}} flyttade <2>{{card}}</2> från {{fromList}} till {{toList}}',
       userMovedThisCardFromListToList:

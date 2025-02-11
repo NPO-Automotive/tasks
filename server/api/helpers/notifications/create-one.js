@@ -15,7 +15,13 @@ const valuesValidator = (value) => {
 };
 
 // TODO: use templates (views) to build html
-const buildAndSendEmail = async (board, card, action, actorUser, notifiableUser) => {
+const buildAndSendEmail = async (
+  board,
+  card,
+  action,
+  actorUser,
+  notifiableUser,
+) => {
   let emailData;
   switch (action.type) {
     case Action.Types.MOVE_CARD:
@@ -92,9 +98,13 @@ module.exports = {
       cardId: values.action.cardId,
     }).fetch();
 
-    sails.sockets.broadcast(`user:${notification.userId}`, 'notificationCreate', {
-      item: notification,
-    });
+    sails.sockets.broadcast(
+      `user:${notification.userId}`,
+      'notificationCreate',
+      {
+        item: notification,
+      },
+    );
 
     if (sails.hooks.smtp.isActive()) {
       let notifiableUser;
@@ -104,7 +114,13 @@ module.exports = {
         notifiableUser = await sails.helpers.users.getOne(notification.userId);
       }
 
-      buildAndSendEmail(inputs.board, inputs.card, values.action, inputs.actorUser, notifiableUser);
+      buildAndSendEmail(
+        inputs.board,
+        inputs.card,
+        values.action,
+        inputs.actorUser,
+        notifiableUser,
+      );
     }
 
     sails.helpers.utils.sendWebhooks.with({

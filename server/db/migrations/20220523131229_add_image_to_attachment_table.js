@@ -18,7 +18,11 @@ module.exports.up = async (knex) => {
   for (const attachment of attachments) {
     if (attachment.is_image) {
       const image = sharp(
-        path.join(config.custom.attachmentsPath, attachment.dirname, attachment.filename),
+        path.join(
+          config.custom.attachmentsPath,
+          attachment.dirname,
+          attachment.filename,
+        ),
       );
 
       let metadata;
